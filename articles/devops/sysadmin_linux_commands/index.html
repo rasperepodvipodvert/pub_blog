@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <title>blog.filatovz.ru - idea | blog.filatovz.ru</title>
+    <title>Команды для linux сисадмина | blog.filatovz.ru</title>
 
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,17 +11,17 @@
 
     <meta name="author" content="ifilatov" />
     <meta name="robots" content="index, follow"/>
-    <meta name="keywords" content="" />
-    <meta name="description" content="" />
+    <meta name="keywords" content="article, linux, howto, best, devops" />
+    <meta name="description" content="Разные полезные команды для linux админов" />
 
-    <meta property="og:title" content="blog.filatovz.ru - idea"/>
-    <meta property="og:url" content="../../tag/idea/"/>
+    <meta property="og:title" content="Команды для linux сисадмина"/>
+    <meta property="og:url" content="../../../articles/devops/sysadmin_linux_commands/"/>
     <meta property="og:site_name" content="blog.filatovz.ru"/>
-    <meta property="og:type" content="website"/>
-    <meta property="og:image" content="" />
-    <meta property="og:description" content="" />
+    <meta property="og:type" content="article"/>
+    <meta property="og:image" content="../../.." />
+    <meta property="og:description" content="Разные полезные команды для linux админов" />
 
-    <link rel="canonical" href="../../tag/idea/" />
+    <link rel="canonical" href="../../../articles/devops/sysadmin_linux_commands/" />
 
 
 
@@ -40,15 +40,16 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Tipue-Search/5.0.0/tipuesearch.min.js"></script>
 
 
-    <link rel="stylesheet" type="text/css" href="../../theme/css/tree.css" />
-    <script type="text/javascript" src="../../theme/js/tree.js"></script>
+    <link rel="stylesheet" type="text/css" href="../../../theme/css/tree.css" />
+    <link rel="stylesheet" type="text/css" href="../../../theme/css/anchorific.css" />
+    <script type="text/javascript" src="../../../theme/js/anchorific.js"></script>
     <link rel="shortcut icon" type="image/png" href="/theme/images/favicon.png" sizes="16x16" />
 </head>
 <body id="index">
 <div class="header">  
     <div class="container">
         <div class="logo">
-            <a href="../../">
+            <a href="../../../">
                 BLOG.FILATOVZ.RU            </a>
         </div>
 
@@ -88,78 +89,62 @@
     <div class="content">
         <div class="container">
                 <div class="content-grids">
-                        <div class="col-md-9 content-main">
+<div class="single-main">
 
-<div class="archives-list">
+    <div class="col-md-9 single-grid">
 
-    <h2>Статьи с тегом "idea"</h2>
+        <header>
+<h4>
+    <a href="../../../articles/devops/sysadmin_linux_commands/" title="Команды для linux сисадмина">Команды для linux сисадмина</a>
+    Jun 17, 2020
+</h4>
 
-    <ul id="tree" class="tree">
-        <li>idea<ul>
-        <li>2020
-            <ul>
-                    <li>June
-                        <ul>
-                                <li>16
-                                    <ul>
-                                            <li><a href="../../articles/develop/jetbrains_live_tamplates/">Добавляем Live Templates в Jetbrains idea</a></li>
-                                    </ul>
-                                </li>
-                        </ul>
-                    </li>
-            </ul>
-        </li>
-            </ul>
-        </li>
-    </ul>
-
-<br />
-<div class="clearfix"></div>
-
-</div>
-
-                        </div>
-
-                        <div class="col-md-3 content-right">
-
-    <div class="recent">
-        <h3>Содержимое</h3>
-        <ul class="fa-ul">
-            <li><a href="../../categories.html"><i class="fa-li fa fa-tags"></i> Категории</a></li>
-            <li><a href="../../archives.html"><i class="fa-li fa fa-calendar"></i> Архив</a></li>
-            <li><a href="../../tags.html"><i class="fa-li fa fa-tag"></i> Теги</a></li>
+<div class="footer art-info">
 
 
-        </ul>
+
+    
+
+        <br />
+        Теги:         <div class="tag"> <a href="../../../tag/linux/">linux</a></div>
+        <div class="tag"> <a href="../../../tag/howto/">howto</a></div>
+        <div class="tag"> <a href="../../../tag/best/">best</a></div>
+        <div class="tag"> <a href="../../../tag/devops/">devops</a></div>
+
+</div><div class="social-likes">
+    <div class="vkontakte" title="Поделиться ссылкой во Вконтакте">Вконтакте</div>
+    <div class="twitter"  title="Поделиться ссылкой в Твиттере">Twitter</div>
+    <div class="facebook" title="Поделиться ссылкой на Фейсбуке">Facebook</div>
+    <div class="plusone" title="Поделиться ссылкой в Google+">Google+</div>
+</div>        </header>
+
+        <article class="content">
+
+
+            <h2 id="_1"><a class="toclink" href="#_1">Ссылки по теме</a></h2>
+<ul>
+<li><a href="https://www.f-notes.info/linux:linux_command">Полезные команды на одном листе</a></li>
+</ul>
+<h2 id="_2"><a class="toclink" href="#_2">Работа с текстом</a></h2>
+<h4 id="ssh"><a class="toclink" href="#ssh">Показать всех кто коннектился по <code>ssh</code></a></h4>
+<div class="highlight"><pre><span></span>grep <span class="s1">&#39;Connection closed&#39;</span> /var/log/secure <span class="p">|</span>cut -d <span class="s1">&#39; &#39;</span> -f <span class="m">9</span><span class="p">|</span>sort<span class="p">|</span>uniq -c<span class="p">|</span>sort -n
+</pre></div>
+
+
+<h2 id="iptables"><a class="toclink" href="#iptables">iptables</a></h2>
+<div class="highlight"><pre><span></span><span class="c1"># Блокировка IP через iptables</span>
+iptables -A INPUT -s <span class="m">212</span>.116.121.83 -j DROP
+<span class="c1"># Разблокировка IP через iptables </span>
+iptables -D INPUT -s <span class="m">212</span>.116.121.83 -j DROP
+</pre></div>
+
+        </article>
+
     </div>
-
-        <div class="side-links">
-            <h3>Ссылки</h3>
-            <ul class="fa-ul">
-                    <li><a href="http://getpelican.com/"><i class="fa-li fa fa-external-link"></i> Pelican</a></li>
-                    <li><a href="http://python.org/"><i class="fa-li fa fa-external-link"></i> Python.org</a></li>
-                    <li><a href="http://jinja.pocoo.org/"><i class="fa-li fa fa-external-link"></i> Jinja2</a></li>
-            </ul>
-        </div>
-
-        <div class="side-links">
-            <h3>Социал</h3>
-            <ul class="fa-ul">
-                    <li><a href="https://vk.com/filatovzru"><i class="fa-li fa fa-vk"></i> ВКонтакте</a></li>
-                    <li><a href="https://twitter.com/ia_filatov"><i class="fa-li fa fa-twitter"></i> Twitter</a></li>
-            </ul>
-        </div>
-
-        <div class="categories">
-            <h3>Теги</h3>
-            <ul id="cloud">
-            </ul>
-         </div>
-
-                            <div class="clearfix"></div>
-                        </div>
-
-                        <div class="clearfix"></div>
+    <div class="col-md-3 content-right">
+        <div class='anchorific'></div>
+    </div>
+</div>
                 </div>
         </div>
     </div>
