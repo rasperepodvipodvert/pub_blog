@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <title>Проверка отправки почты из bitrix | blog.filatovz.ru</title>
+    <title>Софт для написания документации | blog.filatovz.ru</title>
 
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,17 +11,17 @@
 
     <meta name="author" content="ifilatov" />
     <meta name="robots" content="index, follow"/>
-    <meta name="keywords" content="article, bitrix, howto" />
-    <meta name="description" content="Как проверить отправку почты из bitrixvm?" />
+    <meta name="keywords" content="article, soft, documentations, vscode, plugins" />
+    <meta name="description" content="Здесь собран софт, необходимый для написания документации." />
 
-    <meta property="og:title" content="Проверка отправки почты из bitrix"/>
-    <meta property="og:url" content="../../../articles/bitrix/bitrix_sendmail/"/>
+    <meta property="og:title" content="Софт для написания документации"/>
+    <meta property="og:url" content="../../../articles/soft/sysadmin_linux_commands/"/>
     <meta property="og:site_name" content="blog.filatovz.ru"/>
     <meta property="og:type" content="article"/>
     <meta property="og:image" content="../../.." />
-    <meta property="og:description" content="Как проверить отправку почты из bitrixvm?" />
+    <meta property="og:description" content="Здесь собран софт, необходимый для написания документации." />
 
-    <link rel="canonical" href="../../../articles/bitrix/bitrix_sendmail/" />
+    <link rel="canonical" href="../../../articles/soft/sysadmin_linux_commands/" />
 
 
 
@@ -97,8 +97,8 @@
 
         <header>
 <h4>
-    <a href="../../../articles/bitrix/bitrix_sendmail/" title="Проверка отправки почты из bitrix">Проверка отправки почты из bitrix</a>
-    Jun 17, 2020
+    <a href="../../../articles/soft/sysadmin_linux_commands/" title="Софт для написания документации">Софт для написания документации</a>
+    Jun 18, 2020
 </h4>
 
 <div class="footer art-info">
@@ -106,11 +106,15 @@
 <!--  -->
 
 
-    <!--      -->
+    <!--     Translations: 
+        <a href="../../../articles/devops/sysadmin_linux_commands/">ru</a>
+ -->
 
         <br />
-        Теги:         <div class="tag"> <a href="../../../tag/bitrix/">bitrix</a></div>
-        <div class="tag"> <a href="../../../tag/howto/">howto</a></div>
+        Теги:         <div class="tag"> <a href="../../../tag/soft/">soft</a></div>
+        <div class="tag"> <a href="../../../tag/documentations/">documentations</a></div>
+        <div class="tag"> <a href="../../../tag/vscode/">vscode</a></div>
+        <div class="tag"> <a href="../../../tag/plugins/">plugins</a></div>
 
 </div>
         </header>
@@ -118,15 +122,17 @@
         <article class="content">
 
 
-            <div class="highlight"><pre><span></span><code><span class="cp">&lt;?php</span>
-<span class="k">if</span> <span class="p">(</span><span class="nb">mail</span><span class="p">(</span><span class="s2">&quot;my_mail@mail.ru&quot;</span><span class="p">,</span> <span class="s2">&quot;заголовок&quot;</span><span class="p">,</span> <span class="s2">&quot;текст&quot;</span><span class="p">))</span> <span class="p">{</span>
-    <span class="k">echo</span> <span class="s1">&#39;Отправлено&#39;</span><span class="p">;</span>
-<span class="p">}</span>
-<span class="k">else</span> <span class="p">{</span>
-    <span class="k">echo</span> <span class="s1">&#39;Не отправлено&#39;</span><span class="p">;</span>
-<span class="p">}</span>
-<span class="cp">?&gt;</span><span class="x"></span>
-</code></pre></div>
+            <h2 id="_1"><a class="toclink" href="#_1">Принцип написания документации</a></h2>
+<ol>
+<li>Все изменения конфигов должны попадать в <a href="https://git-scm.com/">git</a></li>
+<li>Документация серверов должна вестить от корня <code>/</code></li>
+</ol>
+<p>Основной инструмент для написания документации это <a href="https://code.visualstudio.com/">VSCODE</a></p>
+<h4 id="visual-studio-code"><a class="toclink" href="#visual-studio-code">Visual Studio Code</a></h4>
+<ul>
+<li><a href="https://github.com/huntertran/markdown-toc">Auto MarkdownTOC</a></li>
+<li><a href="https://github.com/yzhang-gh/vscode-markdown">Markdown All in One</a></li>
+</ul>
 
         </article>
 
