@@ -111,12 +111,8 @@
         <div class="tag"> <a href="../../../tag/best/">best</a></div>
         <div class="tag"> <a href="../../../tag/devops/">devops</a></div>
 
-</div><div class="social-likes">
-    <div class="vkontakte" title="Поделиться ссылкой во Вконтакте">Вконтакте</div>
-    <div class="twitter"  title="Поделиться ссылкой в Твиттере">Twitter</div>
-    <div class="facebook" title="Поделиться ссылкой на Фейсбуке">Facebook</div>
-    <div class="plusone" title="Поделиться ссылкой в Google+">Google+</div>
-</div>        </header>
+</div>
+        </header>
 
         <article class="content">
 
@@ -127,16 +123,16 @@
 </ul>
 <h2 id="_2"><a class="toclink" href="#_2">Работа с текстом</a></h2>
 <h4 id="ssh"><a class="toclink" href="#ssh">Показать всех кто коннектился по <code>ssh</code></a></h4>
-<div class="highlight"><pre><span></span>grep <span class="s1">&#39;Connection closed&#39;</span> /var/log/secure <span class="p">|</span>cut -d <span class="s1">&#39; &#39;</span> -f <span class="m">9</span><span class="p">|</span>sort<span class="p">|</span>uniq -c<span class="p">|</span>sort -n
-</pre></div>
+<div class="highlight"><pre><span></span><code>grep <span class="s1">&#39;Connection closed&#39;</span> /var/log/secure <span class="p">|</span>cut -d <span class="s1">&#39; &#39;</span> -f <span class="m">9</span><span class="p">|</span>sort<span class="p">|</span>uniq -c<span class="p">|</span>sort -n
+</code></pre></div>
 
 
 <h2 id="iptables"><a class="toclink" href="#iptables">iptables</a></h2>
-<div class="highlight"><pre><span></span><span class="c1"># Блокировка IP через iptables</span>
+<div class="highlight"><pre><span></span><code><span class="c1"># Блокировка IP через iptables</span>
 iptables -A INPUT -s <span class="m">212</span>.116.121.83 -j DROP
 <span class="c1"># Разблокировка IP через iptables </span>
 iptables -D INPUT -s <span class="m">212</span>.116.121.83 -j DROP
-</pre></div>
+</code></pre></div>
 
         </article>
 
