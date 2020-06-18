@@ -123,15 +123,53 @@
 
 
             <h2 id="_1"><a class="toclink" href="#_1">Принцип написания документации</a></h2>
-<ol>
+<ul>
 <li>Все изменения конфигов должны попадать в <a href="https://git-scm.com/">git</a></li>
 <li>Документация серверов должна вестить от корня <code>/</code></li>
-</ol>
-<p>Основной инструмент для написания документации это <a href="https://code.visualstudio.com/">VSCODE</a></p>
-<h4 id="visual-studio-code"><a class="toclink" href="#visual-studio-code">Visual Studio Code</a></h4>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="c1"># Пример:</span>
+├── server.ru
+│   ├── etc
+│   │   ├── cron.d
+│   │   │   ├── 0hourly
+│   │   │   └── sysstat
+│   │   ├── cron.daily
+│   │   │   ├── etckeeper
+│   │   │   └── logrotate
+│   │   ├── cron.hourly
+│   │   │   └── 0anacron
+│   │   ├── crontab
+│   │   ├── fail2ban
+│   │   │   ├── filter.d
+│   │   │   │   └── apache-badbots.conf
+│   │   │   └── jail.conf
+│   │   ├── goaccess.conf
+│   │   ├── hosts
+│   │   ├── nginx
+│   │   │   ├── bx
+│   │   │   │   ├── conf
+│   │   │   │   │   ├── bitrix.conf
+│   │   │   │   │   ├── ssl.conf
+│   │   │   ├── nginx.conf
+│   │   │   └── ssl
+│   │   ├── passwd
+│   │   ├── php.ini
+│   │   ├── rc.local
+│   │   ├── sudoers
+│   │   ├── sysctl.conf
+│   │   ├── vsftpd
+</code></pre></div>
+
+
 <ul>
-<li><a href="https://github.com/huntertran/markdown-toc">Auto MarkdownTOC</a></li>
-<li><a href="https://github.com/yzhang-gh/vscode-markdown">Markdown All in One</a></li>
+<li>У каждого сервера в корне репозитория должен быть файл <code>readme.md</code> с документацией по данному серверу</li>
+</ul>
+<h2 id="_2"><a class="toclink" href="#_2">Программное обеспечение</a></h2>
+<p>Основной инструмент для написания документации это <a href="https://code.visualstudio.com/">VSCODE</a></p>
+<h4 id="visual-studio-code-plugins"><a class="toclink" href="#visual-studio-code-plugins">Visual Studio Code Plugins</a></h4>
+<ul>
+<li><a href="https://github.com/huntertran/markdown-toc">Auto MarkdownTOC</a> - для генерации содержания</li>
+<li><a href="https://github.com/yzhang-gh/vscode-markdown">Markdown All in One</a> - для подсветки синтаксиса и других полезных сценариев</li>
 </ul>
 
         </article>
