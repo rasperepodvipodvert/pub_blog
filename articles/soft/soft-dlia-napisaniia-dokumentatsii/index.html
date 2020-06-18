@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <title>Команды для linux сисадмина | blog.filatovz.ru</title>
+    <title>Софт для написания документации | blog.filatovz.ru</title>
 
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,17 +11,17 @@
 
     <meta name="author" content="ifilatov" />
     <meta name="robots" content="index, follow"/>
-    <meta name="keywords" content="article, linux, howto, best, devops" />
-    <meta name="description" content="Разные полезные команды для linux админов" />
+    <meta name="keywords" content="article, soft, documentations, vscode, plugins" />
+    <meta name="description" content="Здесь собран софт, необходимый для написания документации." />
 
-    <meta property="og:title" content="Команды для linux сисадмина"/>
-    <meta property="og:url" content="../../../articles/devops/sysadmin_linux_commands/"/>
+    <meta property="og:title" content="Софт для написания документации"/>
+    <meta property="og:url" content="../../../articles/soft/soft-dlia-napisaniia-dokumentatsii/"/>
     <meta property="og:site_name" content="blog.filatovz.ru"/>
     <meta property="og:type" content="article"/>
     <meta property="og:image" content="../../.." />
-    <meta property="og:description" content="Разные полезные команды для linux админов" />
+    <meta property="og:description" content="Здесь собран софт, необходимый для написания документации." />
 
-    <link rel="canonical" href="../../../articles/devops/sysadmin_linux_commands/" />
+    <link rel="canonical" href="../../../articles/soft/soft-dlia-napisaniia-dokumentatsii/" />
 
 
 
@@ -97,8 +97,8 @@
 
         <header>
 <h4>
-    <a href="../../../articles/devops/sysadmin_linux_commands/" title="Команды для linux сисадмина">Команды для linux сисадмина</a>
-    Jun 17, 2020
+    <a href="../../../articles/soft/soft-dlia-napisaniia-dokumentatsii/" title="Софт для написания документации">Софт для написания документации</a>
+    Jun 18, 2020
 </h4>
 
 <div class="footer art-info">
@@ -109,10 +109,10 @@
     <!--      -->
 
         <br />
-        Теги:         <div class="tag"> <a href="../../../tag/linux/">linux</a></div>
-        <div class="tag"> <a href="../../../tag/howto/">howto</a></div>
-        <div class="tag"> <a href="../../../tag/best/">best</a></div>
-        <div class="tag"> <a href="../../../tag/devops/">devops</a></div>
+        Теги:         <div class="tag"> <a href="../../../tag/soft/">soft</a></div>
+        <div class="tag"> <a href="../../../tag/documentations/">documentations</a></div>
+        <div class="tag"> <a href="../../../tag/vscode/">vscode</a></div>
+        <div class="tag"> <a href="../../../tag/plugins/">plugins</a></div>
 
 </div>
         </header>
@@ -120,22 +120,55 @@
         <article class="content">
 
 
-            <h2 id="_1"><a class="toclink" href="#_1">Ссылки по теме</a></h2>
+            <h2 id="_1"><a class="toclink" href="#_1">Принцип написания документации</a></h2>
 <ul>
-<li><a href="https://www.f-notes.info/linux:linux_command">Полезные команды на одном листе</a></li>
+<li>Все изменения конфигов должны попадать в <a href="https://git-scm.com/">git</a></li>
+<li>Документация серверов должна вестить от корня <code>/</code></li>
 </ul>
-<h2 id="_2"><a class="toclink" href="#_2">Работа с текстом</a></h2>
-<h4 id="ssh"><a class="toclink" href="#ssh">Показать всех кто коннектился по <code>ssh</code></a></h4>
-<div class="highlight"><pre><span></span><code>grep <span class="s1">&#39;Connection closed&#39;</span> /var/log/secure <span class="p">|</span>cut -d <span class="s1">&#39; &#39;</span> -f <span class="m">9</span><span class="p">|</span>sort<span class="p">|</span>uniq -c<span class="p">|</span>sort -n
+<div class="highlight"><pre><span></span><code><span class="c1"># Пример:</span>
+├── server.ru
+│   ├── etc
+│   │   ├── cron.d
+│   │   │   ├── 0hourly
+│   │   │   └── sysstat
+│   │   ├── cron.daily
+│   │   │   ├── etckeeper
+│   │   │   └── logrotate
+│   │   ├── cron.hourly
+│   │   │   └── 0anacron
+│   │   ├── crontab
+│   │   ├── fail2ban
+│   │   │   ├── filter.d
+│   │   │   │   └── apache-badbots.conf
+│   │   │   └── jail.conf
+│   │   ├── goaccess.conf
+│   │   ├── hosts
+│   │   ├── nginx
+│   │   │   ├── bx
+│   │   │   │   ├── conf
+│   │   │   │   │   ├── bitrix.conf
+│   │   │   │   │   ├── ssl.conf
+│   │   │   ├── nginx.conf
+│   │   │   └── ssl
+│   │   ├── passwd
+│   │   ├── php.ini
+│   │   ├── rc.local
+│   │   ├── sudoers
+│   │   ├── sysctl.conf
+│   │   ├── vsftpd
 </code></pre></div>
 
 
-<h2 id="iptables"><a class="toclink" href="#iptables">iptables</a></h2>
-<div class="highlight"><pre><span></span><code><span class="c1"># Блокировка IP через iptables</span>
-iptables -A INPUT -s <span class="m">212</span>.116.121.83 -j DROP
-<span class="c1"># Разблокировка IP через iptables </span>
-iptables -D INPUT -s <span class="m">212</span>.116.121.83 -j DROP
-</code></pre></div>
+<ul>
+<li>У каждого сервера в корне репозитория должен быть файл <code>readme.md</code> с документацией по данному серверу</li>
+</ul>
+<h2 id="_2"><a class="toclink" href="#_2">Программное обеспечение</a></h2>
+<p>Основной инструмент для написания документации это <a href="https://code.visualstudio.com/">VSCODE</a></p>
+<h4 id="visual-studio-code-plugins"><a class="toclink" href="#visual-studio-code-plugins">Visual Studio Code Plugins</a></h4>
+<ul>
+<li><a href="https://github.com/huntertran/markdown-toc">Auto MarkdownTOC</a> - для генерации содержания</li>
+<li><a href="https://github.com/yzhang-gh/vscode-markdown">Markdown All in One</a> - для подсветки синтаксиса и других полезных сценариев</li>
+</ul>
 
         </article>
 

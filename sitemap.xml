@@ -5,48 +5,48 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://rasperepodvipodvert.github.io/pub_blog/</loc>
-<lastmod>2020-06-18T10:55:11-00:00</lastmod>
+<lastmod>2020-06-18T10:56:20-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://rasperepodvipodvert.github.io/pub_blog/tags.html</loc>
-<lastmod>2020-06-18T10:55:11-00:00</lastmod>
+<lastmod>2020-06-18T10:56:20-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://rasperepodvipodvert.github.io/pub_blog/categories.html</loc>
-<lastmod>2020-06-18T10:55:11-00:00</lastmod>
+<lastmod>2020-06-18T10:56:20-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://rasperepodvipodvert.github.io/pub_blog/authors/</loc>
-<lastmod>2020-06-18T10:55:11-00:00</lastmod>
+<lastmod>2020-06-18T10:56:20-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://rasperepodvipodvert.github.io/pub_blog/archives.html</loc>
-<lastmod>2020-06-18T10:55:11-00:00</lastmod>
+<lastmod>2020-06-18T10:56:20-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://rasperepodvipodvert.github.io/pub_blog/search.html</loc>
-<lastmod>2020-06-18T10:55:11-00:00</lastmod>
+<lastmod>2020-06-18T10:56:20-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://rasperepodvipodvert.github.io/pub_blog/articles/soft/sysadmin_linux_commands/</loc>
+<loc>https://rasperepodvipodvert.github.io/pub_blog/articles/soft/soft-dlia-napisaniia-dokumentatsii/</loc>
 <lastmod>2020-06-18T10:14:00+03:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
@@ -175,20 +175,6 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <loc>https://rasperepodvipodvert.github.io/pub_blog/author/ifilatov/</loc>
 <lastmod>2020-06-18T10:14:00+02:30</lastmod>
 <changefreq>daily</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
-<loc>https://rasperepodvipodvert.github.io/pub_blog/articles/devops/sysadmin_linux_commands/</loc>
-<lastmod>2020-06-17T10:41:00+03:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
-<loc>https://rasperepodvipodvert.github.io/pub_blog/articles/soft/sysadmin_linux_commands/</loc>
-<lastmod>2020-06-18T10:14:00+03:00</lastmod>
-<changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
