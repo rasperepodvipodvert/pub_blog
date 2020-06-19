@@ -18,7 +18,7 @@
     <meta property="og:url" content="../../../articles/bitrix/bitrix_recepts/"/>
     <meta property="og:site_name" content="blog.filatovz.ru"/>
     <meta property="og:type" content="article"/>
-    <meta property="og:image" content="../../.." />
+    <meta property="og:image" content="../../../media/1cbitrix.png" />
     <meta property="og:description" content="Здесь лежат всякие ништяки по 1С Битрикс" />
 
     <link rel="canonical" href="../../../articles/bitrix/bitrix_recepts/" />
@@ -120,15 +120,39 @@
 
 
             <h2 id="_1"><a class="toclink" href="#_1">Инструменты</a></h2>
+<h3 id="_2"><a class="toclink" href="#_2">Среда разработки</a></h3>
 <ul>
 <li><a href="https://habr.com/en/sandbox/73214/">Инструменты для разработки под 1С-Битрикс</a>. Здесь автор расказывает как правильно настроить среду разработки и подключиться к проекту.</li>
 </ul>
-<h2 id="_2"><a class="toclink" href="#_2">Очистка кэша</a></h2>
+<h3 id="duplicati-"><a class="toclink" href="#duplicati-"><a href="https://www.duplicati.com/">Duplicati</a> - резервное копирование</a></h3>
+<p>Как показала практика, бэкапы битрикса лучше делать с помощью <a href="https://www.duplicati.com/">Duplicati</a>. Все прелести этого ПО я не буду описывать выделю лишь только то, что подходит для битрикса:</p>
+<ul>
+<li>Хранение бэкапов в облаке</li>
+<li>Шифрование бэкапов, а это значит можете хранить в любом облаке, даже не шипко защищенном</li>
+<li>Автоматические действия до и после резервного копирования, на пример снять дамп БД перед резервным копирование</li>
+<li>Уведомление о успешном/неуспешном резервном копировании</li>
+</ul>
+<h2 id="_3"><a class="toclink" href="#_3">Очистка кэша</a></h2>
 <blockquote>
 <p><a href="https://qna.habr.com/q/564222">Просто удаляете эту папку и битрикс потом сам пересоздаст кэш по мере потребления</a>
 <a href="https://iplogic.ru/baza-znaniy/ochistka-papki-upload-v-bitriks-cherez-agent/">Можно еще правильно настроить битрикс</a></p>
 </blockquote>
 <div class="highlight"><pre><span></span><code>rm -rf ./bitrix/upload/resize_cache
+</code></pre></div>
+
+
+<h2 id="_4"><a class="toclink" href="#_4">Бэкап</a></h2>
+<blockquote>
+<p><a href="https://tuning-soft.ru/articles/bitrix/backup-bitrix.html">Детальное описание</a> резервного копирования от другого автора, полезно к прочтению!</p>
+</blockquote>
+<h3 id="_5"><a class="toclink" href="#_5">Каталоги, которые можно исключить из бэкапа</a></h3>
+<div class="highlight"><pre><span></span><code><span class="c1"># exlude directory for bitrix &lt; v12</span>
+<span class="na">/bitrix/backup          # бэкапы самого битрикса</span>
+<span class="na">/bitrix/cache           # неуправляемый кэш</span>
+<span class="na">/bitrix/managed_cache   # управляемый кэш</span>
+<span class="na">/bitrix/stack_cache     # файлы кэша с &quot;вытеснением&quot;</span>
+<span class="na">/upload/resize_cache    # кэш ресайза изображений</span>
+ <span class="na">/bitrix/wizards        # мастера и демо-решения</span>
 </code></pre></div>
 
         </article>
