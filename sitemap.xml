@@ -4,238 +4,238 @@ xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitem
 xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
-<loc>https://rasperepodvipodvert.github.io/pub_blog/</loc>
-<lastmod>2020-06-19T11:59:38-00:00</lastmod>
+<loc>https://blog.filatovz.ru/</loc>
+<lastmod>2020-06-19T12:03:14-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://rasperepodvipodvert.github.io/pub_blog/tags.html</loc>
-<lastmod>2020-06-19T11:59:38-00:00</lastmod>
+<loc>https://blog.filatovz.ru/tags.html</loc>
+<lastmod>2020-06-19T12:03:14-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://rasperepodvipodvert.github.io/pub_blog/categories.html</loc>
-<lastmod>2020-06-19T11:59:38-00:00</lastmod>
+<loc>https://blog.filatovz.ru/categories.html</loc>
+<lastmod>2020-06-19T12:03:14-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://rasperepodvipodvert.github.io/pub_blog/authors/</loc>
-<lastmod>2020-06-19T11:59:38-00:00</lastmod>
+<loc>https://blog.filatovz.ru/authors/</loc>
+<lastmod>2020-06-19T12:03:14-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://rasperepodvipodvert.github.io/pub_blog/archives.html</loc>
-<lastmod>2020-06-19T11:59:38-00:00</lastmod>
+<loc>https://blog.filatovz.ru/archives.html</loc>
+<lastmod>2020-06-19T12:03:14-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://rasperepodvipodvert.github.io/pub_blog/search.html</loc>
-<lastmod>2020-06-19T11:59:38-00:00</lastmod>
+<loc>https://blog.filatovz.ru/search.html</loc>
+<lastmod>2020-06-19T12:03:14-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://rasperepodvipodvert.github.io/pub_blog/articles/bitrix/bitrix_recepts/</loc>
+<loc>https://blog.filatovz.ru/articles/bitrix/bitrix_recepts/</loc>
 <lastmod>2020-06-19T10:40:00+03:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://rasperepodvipodvert.github.io/pub_blog/articles/internet/adguard_dns_mikrotik/</loc>
+<loc>https://blog.filatovz.ru/articles/internet/adguard_dns_mikrotik/</loc>
 <lastmod>2020-06-18T15:00:00+03:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://rasperepodvipodvert.github.io/pub_blog/articles/develop/nastraivaem-zadachi-iz-bitrix24-v-jetbrains-idea/</loc>
+<loc>https://blog.filatovz.ru/articles/develop/nastraivaem-zadachi-iz-bitrix24-v-jetbrains-idea/</loc>
 <lastmod>2020-06-18T11:40:00+03:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://rasperepodvipodvert.github.io/pub_blog/articles/soft/soft-dlia-napisaniia-dokumentatsii/</loc>
+<loc>https://blog.filatovz.ru/articles/soft/soft-dlia-napisaniia-dokumentatsii/</loc>
 <lastmod>2020-06-18T10:14:00+03:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://rasperepodvipodvert.github.io/pub_blog/articles/devops/sysadmin_linux_commands/</loc>
+<loc>https://blog.filatovz.ru/articles/devops/sysadmin_linux_commands/</loc>
 <lastmod>2020-06-17T10:41:00+03:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://rasperepodvipodvert.github.io/pub_blog/articles/bitrix/bitrix_sendmail/</loc>
+<loc>https://blog.filatovz.ru/articles/bitrix/bitrix_sendmail/</loc>
 <lastmod>2020-06-17T10:40:00+03:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://rasperepodvipodvert.github.io/pub_blog/articles/develop/jetbrains_live_tamplates/</loc>
+<loc>https://blog.filatovz.ru/articles/develop/jetbrains_live_tamplates/</loc>
 <lastmod>2020-06-16T10:40:00+03:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://rasperepodvipodvert.github.io/pub_blog/category/bitrix</loc>
+<loc>https://blog.filatovz.ru/category/bitrix</loc>
 <lastmod>2020-06-19T10:40:00+02:30</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://rasperepodvipodvert.github.io/pub_blog/category/develop</loc>
+<loc>https://blog.filatovz.ru/category/develop</loc>
 <lastmod>2020-06-18T11:40:00+02:30</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://rasperepodvipodvert.github.io/pub_blog/category/devops</loc>
+<loc>https://blog.filatovz.ru/category/devops</loc>
 <lastmod>2020-06-17T10:41:00+02:30</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://rasperepodvipodvert.github.io/pub_blog/category/internet</loc>
+<loc>https://blog.filatovz.ru/category/internet</loc>
 <lastmod>2020-06-18T15:00:00+02:30</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://rasperepodvipodvert.github.io/pub_blog/category/soft</loc>
+<loc>https://blog.filatovz.ru/category/soft</loc>
 <lastmod>2020-06-18T10:14:00+02:30</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://rasperepodvipodvert.github.io/pub_blog/tag/bitrix/</loc>
+<loc>https://blog.filatovz.ru/tag/bitrix/</loc>
 <lastmod>2020-06-19T10:40:00+02:30</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://rasperepodvipodvert.github.io/pub_blog/tag/howto/</loc>
+<loc>https://blog.filatovz.ru/tag/howto/</loc>
 <lastmod>2020-06-19T10:40:00+02:30</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://rasperepodvipodvert.github.io/pub_blog/tag/best/</loc>
+<loc>https://blog.filatovz.ru/tag/best/</loc>
 <lastmod>2020-06-19T10:40:00+02:30</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://rasperepodvipodvert.github.io/pub_blog/tag/routers/</loc>
+<loc>https://blog.filatovz.ru/tag/routers/</loc>
 <lastmod>2020-06-18T15:00:00+02:30</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://rasperepodvipodvert.github.io/pub_blog/tag/internet/</loc>
+<loc>https://blog.filatovz.ru/tag/internet/</loc>
 <lastmod>2020-06-18T15:00:00+02:30</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://rasperepodvipodvert.github.io/pub_blog/tag/mikrotik/</loc>
+<loc>https://blog.filatovz.ru/tag/mikrotik/</loc>
 <lastmod>2020-06-18T15:00:00+02:30</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://rasperepodvipodvert.github.io/pub_blog/tag/idea/</loc>
+<loc>https://blog.filatovz.ru/tag/idea/</loc>
 <lastmod>2020-06-18T11:40:00+02:30</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://rasperepodvipodvert.github.io/pub_blog/tag/bitrix24/</loc>
+<loc>https://blog.filatovz.ru/tag/bitrix24/</loc>
 <lastmod>2020-06-18T11:40:00+02:30</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://rasperepodvipodvert.github.io/pub_blog/tag/tasks/</loc>
+<loc>https://blog.filatovz.ru/tag/tasks/</loc>
 <lastmod>2020-06-18T11:40:00+02:30</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://rasperepodvipodvert.github.io/pub_blog/tag/soft/</loc>
+<loc>https://blog.filatovz.ru/tag/soft/</loc>
 <lastmod>2020-06-18T10:14:00+02:30</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://rasperepodvipodvert.github.io/pub_blog/tag/documentations/</loc>
+<loc>https://blog.filatovz.ru/tag/documentations/</loc>
 <lastmod>2020-06-18T10:14:00+02:30</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://rasperepodvipodvert.github.io/pub_blog/tag/vscode/</loc>
+<loc>https://blog.filatovz.ru/tag/vscode/</loc>
 <lastmod>2020-06-18T10:14:00+02:30</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://rasperepodvipodvert.github.io/pub_blog/tag/plugins/</loc>
+<loc>https://blog.filatovz.ru/tag/plugins/</loc>
 <lastmod>2020-06-18T10:14:00+02:30</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://rasperepodvipodvert.github.io/pub_blog/tag/linux/</loc>
+<loc>https://blog.filatovz.ru/tag/linux/</loc>
 <lastmod>2020-06-17T10:41:00+02:30</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://rasperepodvipodvert.github.io/pub_blog/tag/devops/</loc>
+<loc>https://blog.filatovz.ru/tag/devops/</loc>
 <lastmod>2020-06-17T10:41:00+02:30</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://rasperepodvipodvert.github.io/pub_blog/author/ifilatov/</loc>
+<loc>https://blog.filatovz.ru/author/ifilatov/</loc>
 <lastmod>2020-06-19T10:40:00+02:30</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
