@@ -5,43 +5,50 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://rasperepodvipodvert.github.io/pub_blog/</loc>
-<lastmod>2020-06-19T10:04:49-00:00</lastmod>
+<lastmod>2020-06-19T10:24:47-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://rasperepodvipodvert.github.io/pub_blog/tags.html</loc>
-<lastmod>2020-06-19T10:04:49-00:00</lastmod>
+<lastmod>2020-06-19T10:24:47-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://rasperepodvipodvert.github.io/pub_blog/categories.html</loc>
-<lastmod>2020-06-19T10:04:49-00:00</lastmod>
+<lastmod>2020-06-19T10:24:47-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://rasperepodvipodvert.github.io/pub_blog/authors/</loc>
-<lastmod>2020-06-19T10:04:49-00:00</lastmod>
+<lastmod>2020-06-19T10:24:47-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://rasperepodvipodvert.github.io/pub_blog/archives.html</loc>
-<lastmod>2020-06-19T10:04:49-00:00</lastmod>
+<lastmod>2020-06-19T10:24:47-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://rasperepodvipodvert.github.io/pub_blog/search.html</loc>
-<lastmod>2020-06-19T10:04:49-00:00</lastmod>
+<lastmod>2020-06-19T10:24:47-00:00</lastmod>
 <changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>https://rasperepodvipodvert.github.io/pub_blog/articles/bitrix/bitrix_recepts/</loc>
+<lastmod>2020-06-19T10:40:00+03:00</lastmod>
+<changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
@@ -89,7 +96,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://rasperepodvipodvert.github.io/pub_blog/category/bitrix</loc>
-<lastmod>2020-06-17T10:40:00+02:30</lastmod>
+<lastmod>2020-06-19T10:40:00+02:30</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -123,21 +130,28 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://rasperepodvipodvert.github.io/pub_blog/tag/routers/</loc>
-<lastmod>2020-06-18T15:00:00+02:30</lastmod>
+<loc>https://rasperepodvipodvert.github.io/pub_blog/tag/bitrix/</loc>
+<lastmod>2020-06-19T10:40:00+02:30</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://rasperepodvipodvert.github.io/pub_blog/tag/howto/</loc>
-<lastmod>2020-06-18T15:00:00+02:30</lastmod>
+<lastmod>2020-06-19T10:40:00+02:30</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://rasperepodvipodvert.github.io/pub_blog/tag/best/</loc>
+<lastmod>2020-06-19T10:40:00+02:30</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>https://rasperepodvipodvert.github.io/pub_blog/tag/routers/</loc>
 <lastmod>2020-06-18T15:00:00+02:30</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
@@ -221,15 +235,8 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://rasperepodvipodvert.github.io/pub_blog/tag/bitrix/</loc>
-<lastmod>2020-06-17T10:40:00+02:30</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
 <loc>https://rasperepodvipodvert.github.io/pub_blog/author/ifilatov/</loc>
-<lastmod>2020-06-18T15:00:00+02:30</lastmod>
+<lastmod>2020-06-19T10:40:00+02:30</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
