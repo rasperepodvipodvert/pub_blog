@@ -5,50 +5,57 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://blog.filatovz.ru/</loc>
-<lastmod>2020-06-22T12:31:49-00:00</lastmod>
+<lastmod>2020-06-22T13:57:42-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://blog.filatovz.ru/tags.html</loc>
-<lastmod>2020-06-22T12:31:49-00:00</lastmod>
+<lastmod>2020-06-22T13:57:42-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://blog.filatovz.ru/categories.html</loc>
-<lastmod>2020-06-22T12:31:49-00:00</lastmod>
+<lastmod>2020-06-22T13:57:42-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://blog.filatovz.ru/authors/</loc>
-<lastmod>2020-06-22T12:31:49-00:00</lastmod>
+<lastmod>2020-06-22T13:57:42-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://blog.filatovz.ru/archives.html</loc>
-<lastmod>2020-06-22T12:31:49-00:00</lastmod>
+<lastmod>2020-06-22T13:57:42-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://blog.filatovz.ru/search.html</loc>
-<lastmod>2020-06-22T12:31:49-00:00</lastmod>
+<lastmod>2020-06-22T13:57:42-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://blog.filatovz.ru/turbo.html</loc>
-<lastmod>2020-06-22T12:31:49-00:00</lastmod>
+<lastmod>2020-06-22T13:57:42-00:00</lastmod>
 <changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>https://blog.filatovz.ru/articles/devops/swap_to_file/</loc>
+<lastmod>2020-06-22T10:41:00+03:00</lastmod>
+<changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
@@ -124,7 +131,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://blog.filatovz.ru/category/devops</loc>
-<lastmod>2020-06-17T10:41:00+02:30</lastmod>
+<lastmod>2020-06-22T10:41:00+02:30</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -151,21 +158,42 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://blog.filatovz.ru/tag/bitrix/</loc>
-<lastmod>2020-06-19T10:40:00+02:30</lastmod>
+<loc>https://blog.filatovz.ru/tag/linux/</loc>
+<lastmod>2020-06-22T10:41:00+02:30</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://blog.filatovz.ru/tag/howto/</loc>
-<lastmod>2020-06-19T10:40:00+02:30</lastmod>
+<lastmod>2020-06-22T10:41:00+02:30</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://blog.filatovz.ru/tag/best/</loc>
+<lastmod>2020-06-22T10:41:00+02:30</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>https://blog.filatovz.ru/tag/devops/</loc>
+<lastmod>2020-06-22T10:41:00+02:30</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>https://blog.filatovz.ru/tag/swap/</loc>
+<lastmod>2020-06-22T10:41:00+02:30</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>https://blog.filatovz.ru/tag/bitrix/</loc>
 <lastmod>2020-06-19T10:40:00+02:30</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
@@ -242,22 +270,8 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://blog.filatovz.ru/tag/linux/</loc>
-<lastmod>2020-06-17T10:41:00+02:30</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
-<loc>https://blog.filatovz.ru/tag/devops/</loc>
-<lastmod>2020-06-17T10:41:00+02:30</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
 <loc>https://blog.filatovz.ru/author/ifilatov/</loc>
-<lastmod>2020-06-19T10:40:00+02:30</lastmod>
+<lastmod>2020-06-22T10:41:00+02:30</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>

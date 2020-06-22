@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <title>Команды для linux сисадмина | blog.filatovz.ru</title>
+    <title>Включаем SWAP в файл | blog.filatovz.ru</title>
 
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,19 +11,21 @@
 
     <meta name="author" content="ifilatov" />
     <meta name="robots" content="index, follow"/>
-    <meta name="keywords" content="article, linux, howto, best, devops" />
-    <meta name="description" content="Разные полезные команды для linux админов" />
+    <meta name="keywords" content="article, linux, howto, best, devops, swap" />
+    <meta name="description" content="Иногда полезно иметь swap в файле на сервере, на пример на купленной VPS на которой мало RAM" />
 
-    <meta property="og:title" content="Команды для linux сисадмина"/>
-    <meta property="og:url" content="../../../articles/develop/sysadmin_linux_commands/"/>
+    <meta property="og:title" content="Включаем SWAP в файл"/>
+    <meta property="og:url" content="../../../articles/devops/swap_to_file/"/>
     <meta property="og:site_name" content="blog.filatovz.ru"/>
     <meta property="og:type" content="article"/>
-    <meta property="og:image" content="../../.." />
-    <meta property="og:description" content="Разные полезные команды для linux админов" />
+    <meta property="og:image" content="../../../media/swap_to_file.jpg" />
+    <meta property="og:description" content="Иногда полезно иметь swap в файле на сервере, на пример на купленной VPS на которой мало RAM" />
 
-    <link rel="canonical" href="../../../articles/develop/sysadmin_linux_commands/" />
+    <link rel="canonical" href="../../../articles/devops/swap_to_file/" />
 
+    <link href="https://blog.filatovz.ru/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="blog.filatovz.ru Atom">
 
+    <link href="https://blog.filatovz.ru/feeds/all.rss.xml" type="application/rss+xml" rel="alternate" title="blog.filatovz.ru RSS">
 
     <link rel="stylesheet" type="text/css" href="/theme/css/bootstrap.css" />
     <link rel="stylesheet" type="text/css" href="/theme/css/font-awesome.css" />
@@ -32,18 +34,19 @@
     <link rel="stylesheet" type="text/css" href="/theme/css/social-likes_flat.css" />
 
     <script type="text/javascript" src="/theme/js/jquery.min.js"></script>
-<script type="text/javascript" src="/theme/js/anchorific.js"></script>
     <script type="text/javascript" src="/theme/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="/theme/js/social-likes.min.js"></script>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Tipue-Search/5.0.0/tipuesearch_set.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Tipue-Search/5.0.0/tipuesearch.min.js"></script>
+  <script src="/theme/js/tipuesearch/tipuesearch_set.js"></script>
+  <script src="/theme/js/tipuesearch/tipuesearch.js"></script>
 
 
     <link rel="stylesheet" type="text/css" href="../../../theme/css/tree.css" />
     <link rel="stylesheet" type="text/css" href="../../../theme/css/anchorific.css" />
     <script type="text/javascript" src="../../../theme/js/anchorific.js"></script>
     <link rel="shortcut icon" type="image/png" href="/theme/images/favicon.png" sizes="16x16" />
+    <link rel="icon" href="/theme/images/favicon.ico" type="image/x-icon">
+    <meta name="yandex-verification" content="2e061d991cb9d809" />
 </head>
 <body id="index">
 <div class="header">  
@@ -71,6 +74,8 @@
                             <a href="/">HOME</a></li>
                         <li >
                             <a href="/tag/best/">BEST</a></li>
+                        <li >
+                            <a href="/archives">ARHIVE</a></li>
 
                     <div class="clearfix"></div>
                 </ul>
@@ -95,47 +100,37 @@
 
         <header>
 <h4>
-    <a href="../../../articles/develop/sysadmin_linux_commands/" title="Команды для linux сисадмина">Команды для linux сисадмина</a>
-    Jun 17, 2020
+    <a href="../../../articles/devops/swap_to_file/" title="Включаем SWAP в файл">Включаем SWAP в файл</a>
+    Jun 22, 2020
 </h4>
 
 <div class="footer art-info">
 
+<!--  -->
 
 
-    
+    <!--      -->
 
         <br />
         Теги:         <div class="tag"> <a href="../../../tag/linux/">linux</a></div>
         <div class="tag"> <a href="../../../tag/howto/">howto</a></div>
         <div class="tag"> <a href="../../../tag/best/">best</a></div>
         <div class="tag"> <a href="../../../tag/devops/">devops</a></div>
+        <div class="tag"> <a href="../../../tag/swap/">swap</a></div>
 
-</div><div class="social-likes">
-    <div class="vkontakte" title="Поделиться ссылкой во Вконтакте">Вконтакте</div>
-    <div class="twitter"  title="Поделиться ссылкой в Твиттере">Twitter</div>
-    <div class="facebook" title="Поделиться ссылкой на Фейсбуке">Facebook</div>
-    <div class="plusone" title="Поделиться ссылкой в Google+">Google+</div>
-</div>        </header>
+</div>
+        </header>
 
         <article class="content">
 
 
-            <ul>
-<li><a href="https://www.f-notes.info/linux:linux_command">Полезные команды на одном листе</a></li>
-</ul>
-<h2>text</h2>
-<div class="highlight"><pre><span></span><span class="c1"># Показать всех кто коннектился по `ssh`</span>
-grep <span class="s1">&#39;Connection closed&#39;</span> /var/log/secure <span class="p">|</span>cut -d <span class="s1">&#39; &#39;</span> -f <span class="m">9</span><span class="p">|</span>sort<span class="p">|</span>uniq -c<span class="p">|</span>sort -n
-</pre></div>
-
-
-<h2>iptables</h2>
-<div class="highlight"><pre><span></span><span class="c1"># Блокировка IP через iptables</span>
-iptables -A INPUT -s <span class="m">212</span>.116.121.83 -j DROP
-<span class="c1"># Разблокировка IP через iptables </span>
-iptables -D INPUT -s <span class="m">212</span>.116.121.83 -j DROP
-</pre></div>
+            <p>Чтобы включить swap в файл делаем следующее:</p>
+<div class="highlight"><pre><span></span><code>sudo dd <span class="k">if</span><span class="o">=</span>/dev/zero <span class="nv">of</span><span class="o">=</span>/var/swapfile <span class="nv">bs</span><span class="o">=</span>1M <span class="nv">count</span><span class="o">=</span><span class="m">2048</span>              <span class="c1"># создаем пустой файл нужного обьема, в данном случае 2ГБ</span>
+sudo chmod <span class="m">600</span> /var/swapfile                                        <span class="c1"># меняем права</span>
+sudo mkswap /var/swapfile                                           <span class="c1"># включаем своп</span>
+<span class="nb">echo</span> /var/swapfile none swap defaults <span class="m">0</span> <span class="m">0</span> <span class="p">|</span> sudo tee -a /etc/fstab  <span class="c1"># добавляем в автомонтирование при старте системы</span>
+sudo swapon -a                                                      <span class="c1"># проверяем, все ли ок</span>
+</code></pre></div>
 
         </article>
 
@@ -158,5 +153,37 @@ iptables -D INPUT -s <span class="m">212</span>.116.121.83 -j DROP
     </div>
 
 
+<script type="text/javascript" src="https://www.l2.io/ip.js?var=userip"></script>
+<!-- Yandex.Metrika counter -->
+<meta name="yandex-verification" content="2e061d991cb9d809" />
+<script type="text/javascript">
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter64995766 = new Ya.Metrika({
+                    id:64995766,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true,
+                    webvisor:true,
+                    params:{'ip': userip}
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/64995766" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
 </body>
 </html>

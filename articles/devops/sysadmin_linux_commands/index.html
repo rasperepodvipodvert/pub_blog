@@ -140,6 +140,22 @@ iptables -A INPUT -s <span class="m">212</span>.116.121.83 -j DROP
 iptables -D INPUT -s <span class="m">212</span>.116.121.83 -j DROP
 </code></pre></div>
 
+
+<h2 id="journalctl"><a class="toclink" href="#journalctl">journalctl</a></h2>
+<div class="highlight"><pre><span></span><code><span class="c1"># Показать ошибки</span>
+journalctl -p err
+
+<span class="c1"># Показать логи в реальном времени</span>
+journalctl -f
+
+<span class="c1"># Логи за определенную дату</span>
+journalctl --since<span class="o">=</span><span class="m">2016</span>-12-20
+journalctl --since<span class="o">=</span><span class="m">2016</span>-12-20 --until<span class="o">=</span><span class="m">2016</span>-12-21
+
+<span class="c1"># Лог конкретного сервиса</span>
+journalctl -b -u zabbix-agent.service
+</code></pre></div>
+
         </article>
 
     </div>
