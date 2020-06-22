@@ -51,11 +51,12 @@ sudo swapon -a                                                      &lt;span cla
 
 
 &lt;h2 id="-trueadmin"&gt;&lt;a class="toclink" href="#-trueadmin"&gt;Режим - TrueAdmin&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;Более жесткую локировку позволяет сделать скрипт (MikroTik StopAD)[https://stopad.hook.sh/]&lt;/p&gt;
+&lt;p&gt;Более жесткую локировку позволяет сделать скрипт (MikroTik StopAD)[https://stopad.hook.sh/]
+Скрипт обновляется, у разработчика достаточно много подписчиков, что свидетельствует об интересе к проекту.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Ресурс постоянно переезжает, а репозиторий нет, так что смотрите за обновлениями.
 В дополненеие к &lt;a href="https://adguard.com/ru/adguard-dns/overview.html"&gt;AdGuard DNS&lt;/a&gt; сделал этот вариант.&lt;/p&gt;
-&lt;p&gt;Пользуюсь уже неделю, &lt;a href="https://ru.wikipedia.org/wiki/UBlock_Origin"&gt;uBlock Origin&lt;/a&gt; можно не ставить, рекламы нет даже на мобильниках подключенных к моему роутеру!&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://ru.wikipedia.org/wiki/UBlock_Origin"&gt;uBlock Origin&lt;/a&gt; можно не ставить, рекламы нет!&lt;/p&gt;
 &lt;/blockquote&gt;</content><category term="internet"></category><category term="routers"></category><category term="howto"></category><category term="best"></category><category term="internet"></category><category term="mikrotik"></category></entry><entry><title>Настраиваем задачи из bitrix24 в jetbrains idea</title><link href="https://blog.filatovz.ru/articles/develop/nastraivaem-zadachi-iz-bitrix24-v-jetbrains-idea/" rel="alternate"></link><published>2020-06-18T11:40:00+03:00</published><updated>2020-06-18T11:40:00+03:00</updated><author><name>ifilatov</name></author><id>tag:blog.filatovz.ru,2020-06-18:/articles/develop/nastraivaem-zadachi-iz-bitrix24-v-jetbrains-idea/</id><summary type="html">&lt;p&gt;Если вы пишете код в idea, а ваш клиент или работодатель ставит задачи в bitrix24, то пользуясь инструкцией в данной статье вы сможете использовать информацию из задачь прямо в idea&lt;/p&gt;</summary><content type="html">&lt;blockquote&gt;
 &lt;p&gt;оригинал &lt;a href="https://habr.com/ru/post/427451/"&gt;здесь&lt;/a&gt;, мои правки ниже&lt;/p&gt;
 &lt;/blockquote&gt;
