@@ -39,6 +39,12 @@ sudo swapon -a                                                      &lt;span cla
 &lt;span class="na"&gt;/bitrix/stack_cache     # файлы кэша с &amp;quot;вытеснением&amp;quot;&lt;/span&gt;
 &lt;span class="na"&gt;/upload/resize_cache    # кэш ресайза изображений&lt;/span&gt;
  &lt;span class="na"&gt;/bitrix/wizards        # мастера и демо-решения&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2 id="_6"&gt;&lt;a class="toclink" href="#_6"&gt;Права на файлы&lt;/a&gt;&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;find /var/www/test.com/public_html -type d -exec chmod &lt;span class="m"&gt;0770&lt;/span&gt; &lt;span class="o"&gt;{}&lt;/span&gt; &lt;span class="se"&gt;\;&lt;/span&gt;
+find /var/www/test.com/public_html -type f -exec chmod &lt;span class="m"&gt;0660&lt;/span&gt; &lt;span class="o"&gt;{}&lt;/span&gt; &lt;span class="se"&gt;\;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content><category term="bitrix"></category><category term="bitrix"></category><category term="howto"></category><category term="best"></category></entry><entry><title>Настраиваем свой микротик на блокировку рекламы</title><link href="https://blog.filatovz.ru/articles/internet/adguard_dns_mikrotik/" rel="alternate"></link><published>2020-06-18T15:00:00+03:00</published><updated>2020-06-18T15:00:00+03:00</updated><author><name>ifilatov</name></author><id>tag:blog.filatovz.ru,2020-06-18:/articles/internet/adguard_dns_mikrotik/</id><summary type="html">&lt;p&gt;Инструкция, как настроить mikrotik или любой другой роутер на блокировку рекламы&lt;/p&gt;</summary><content type="html">&lt;h2 id="_1"&gt;&lt;a class="toclink" href="#_1"&gt;Стандартный режим&lt;/a&gt;&lt;/h2&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&lt;a href="https://adguard.com/ru/adguard-dns/overview.html"&gt;AdGuard DNS&lt;/a&gt; – это альтернативный способ заблокировать рекламу, защитить личные данные и оградить детей от взрослых материалов. Он прост в настройке и использовании и обеспечивает необходимый минимум защиты от рекламы, трекинга и фишинга, независимо от платформы.&lt;/p&gt;
@@ -150,6 +156,16 @@ the &lt;a href="/archives"&gt;Archives&lt;/a&gt;?&lt;/p&gt;</content><category t
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
+&lt;h2 id="docker"&gt;&lt;a class="toclink" href="#docker"&gt;Docker&lt;/a&gt;&lt;/h2&gt;
+&lt;h3 id="portainer"&gt;&lt;a class="toclink" href="#portainer"&gt;Portainer&lt;/a&gt;&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Инструмент администрирования Docker и Swarm&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;docker volume create portainer_data
+docker run -d -p &lt;span class="m"&gt;8000&lt;/span&gt;:8000 -p &lt;span class="m"&gt;9000&lt;/span&gt;:9000 --name&lt;span class="o"&gt;=&lt;/span&gt;portainer --restart&lt;span class="o"&gt;=&lt;/span&gt;always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;h2 id="iptables"&gt;&lt;a class="toclink" href="#iptables"&gt;iptables&lt;/a&gt;&lt;/h2&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="c1"&gt;# Блокировка IP через iptables&lt;/span&gt;
 iptables -A INPUT -s &lt;span class="m"&gt;212&lt;/span&gt;.116.121.83 -j DROP
@@ -171,6 +187,40 @@ journalctl --since&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="m"&gt;2016
 
 &lt;span class="c1"&gt;# Лог конкретного сервиса&lt;/span&gt;
 journalctl -b -u zabbix-agent.service
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2 id="logrotate"&gt;&lt;a class="toclink" href="#logrotate"&gt;logrotate&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Эта служба необходима для того, чтобы архивировать старые логи или удалять их с какой-то переодичностью.
+Базовые настройки хранятся здесь: ''/etc/logrotate.conf''&lt;/p&gt;
+&lt;p&gt;Пример ротации конкретного файла:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;/var/log/fail2ban.log &lt;span class="o"&gt;{&lt;/span&gt;
+
+weekly        &lt;span class="c1"&gt;# ротация раз в неделю. Возможные варианты daily, weekly, monthly, size (например size=1M)&lt;/span&gt;
+rotate &lt;span class="m"&gt;4&lt;/span&gt;      &lt;span class="c1"&gt;# сохраняется последние 4 ротированных файла&lt;/span&gt;
+compress      &lt;span class="c1"&gt;# сжимать ротируемый файл&lt;/span&gt;
+
+delaycompress &lt;span class="c1"&gt;# сжимать предыдущий файл при следующей ротации&lt;/span&gt;
+missingok     &lt;span class="c1"&gt;# отсутствие файла не является ошибкой&lt;/span&gt;
+postrotate    &lt;span class="c1"&gt;# скрипт будет выполнен сразу после ротации&lt;/span&gt;
+fail2ban-client &lt;span class="nb"&gt;set&lt;/span&gt; logtarget /var/log/fail2ban.log /dev/null
+endscript
+
+&lt;span class="c1"&gt;# If fail2ban runs as non-root it still needs to have write access&lt;/span&gt;
+&lt;span class="c1"&gt;# to logfiles.&lt;/span&gt;
+&lt;span class="c1"&gt;# create 640 fail2ban adm&lt;/span&gt;
+create &lt;span class="m"&gt;640&lt;/span&gt; root adm &lt;span class="c1"&gt;# сразу после ротации создать пустой файл с заданными правами и пользователем&lt;/span&gt;
+&lt;span class="o"&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Для немедленного применения изменений можно выполнить:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="s1"&gt;&amp;#39;&amp;#39;&lt;/span&gt;$ logrotate /etc/logrotate.conf&lt;span class="s1"&gt;&amp;#39;&amp;#39;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Для проверки внесенный изменений можно запустить команду (никаких действий с логами не будет выполнено):&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="s1"&gt;&amp;#39;&amp;#39;&lt;/span&gt;$ logrotate -d /etc/logrotate.conf&lt;span class="s1"&gt;&amp;#39;&amp;#39;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content><category term="devops"></category><category term="linux"></category><category term="howto"></category><category term="best"></category><category term="devops"></category></entry><entry><title>Проверка отправки почты из bitrix</title><link href="https://blog.filatovz.ru/articles/bitrix/bitrix_sendmail/" rel="alternate"></link><published>2020-06-17T10:40:00+03:00</published><updated>2020-06-17T10:40:00+03:00</updated><author><name>ifilatov</name></author><id>tag:blog.filatovz.ru,2020-06-17:/articles/bitrix/bitrix_sendmail/</id><summary type="html">&lt;p&gt;Как проверить отправку почты из bitrixvm?&lt;/p&gt;</summary><content type="html">&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="cp"&gt;&amp;lt;?php&lt;/span&gt;
 &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;mail&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;my_mail@mail.ru&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;заголовок&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;текст&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
     &lt;span class="k"&gt;echo&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;Отправлено&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;

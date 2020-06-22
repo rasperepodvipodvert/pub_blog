@@ -133,6 +133,16 @@
 </code></pre></div>
 
 
+<h2 id="docker"><a class="toclink" href="#docker">Docker</a></h2>
+<h3 id="portainer"><a class="toclink" href="#portainer">Portainer</a></h3>
+<blockquote>
+<p>Инструмент администрирования Docker и Swarm</p>
+</blockquote>
+<div class="highlight"><pre><span></span><code>docker volume create portainer_data
+docker run -d -p <span class="m">8000</span>:8000 -p <span class="m">9000</span>:9000 --name<span class="o">=</span>portainer --restart<span class="o">=</span>always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer
+</code></pre></div>
+
+
 <h2 id="iptables"><a class="toclink" href="#iptables">iptables</a></h2>
 <div class="highlight"><pre><span></span><code><span class="c1"># Блокировка IP через iptables</span>
 iptables -A INPUT -s <span class="m">212</span>.116.121.83 -j DROP
@@ -154,6 +164,40 @@ journalctl --since<span class="o">=</span><span class="m">2016</span>-12-20 --un
 
 <span class="c1"># Лог конкретного сервиса</span>
 journalctl -b -u zabbix-agent.service
+</code></pre></div>
+
+
+<h2 id="logrotate"><a class="toclink" href="#logrotate">logrotate</a></h2>
+<p>Эта служба необходима для того, чтобы архивировать старые логи или удалять их с какой-то переодичностью.
+Базовые настройки хранятся здесь: ''/etc/logrotate.conf''</p>
+<p>Пример ротации конкретного файла:</p>
+<div class="highlight"><pre><span></span><code>/var/log/fail2ban.log <span class="o">{</span>
+
+weekly        <span class="c1"># ротация раз в неделю. Возможные варианты daily, weekly, monthly, size (например size=1M)</span>
+rotate <span class="m">4</span>      <span class="c1"># сохраняется последние 4 ротированных файла</span>
+compress      <span class="c1"># сжимать ротируемый файл</span>
+
+delaycompress <span class="c1"># сжимать предыдущий файл при следующей ротации</span>
+missingok     <span class="c1"># отсутствие файла не является ошибкой</span>
+postrotate    <span class="c1"># скрипт будет выполнен сразу после ротации</span>
+fail2ban-client <span class="nb">set</span> logtarget /var/log/fail2ban.log /dev/null
+endscript
+
+<span class="c1"># If fail2ban runs as non-root it still needs to have write access</span>
+<span class="c1"># to logfiles.</span>
+<span class="c1"># create 640 fail2ban adm</span>
+create <span class="m">640</span> root adm <span class="c1"># сразу после ротации создать пустой файл с заданными правами и пользователем</span>
+<span class="o">}</span>
+</code></pre></div>
+
+
+<p>Для немедленного применения изменений можно выполнить:</p>
+<div class="highlight"><pre><span></span><code><span class="s1">&#39;&#39;</span>$ logrotate /etc/logrotate.conf<span class="s1">&#39;&#39;</span>
+</code></pre></div>
+
+
+<p>Для проверки внесенный изменений можно запустить команду (никаких действий с логами не будет выполнено):</p>
+<div class="highlight"><pre><span></span><code><span class="s1">&#39;&#39;</span>$ logrotate -d /etc/logrotate.conf<span class="s1">&#39;&#39;</span>
 </code></pre></div>
 
         </article>

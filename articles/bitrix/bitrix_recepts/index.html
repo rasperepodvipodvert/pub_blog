@@ -158,6 +158,12 @@
  <span class="na">/bitrix/wizards        # мастера и демо-решения</span>
 </code></pre></div>
 
+
+<h2 id="_6"><a class="toclink" href="#_6">Права на файлы</a></h2>
+<div class="highlight"><pre><span></span><code>find /var/www/test.com/public_html -type d -exec chmod <span class="m">0770</span> <span class="o">{}</span> <span class="se">\;</span>
+find /var/www/test.com/public_html -type f -exec chmod <span class="m">0660</span> <span class="o">{}</span> <span class="se">\;</span>
+</code></pre></div>
+
         </article>
 
     </div>
