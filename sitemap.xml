@@ -5,50 +5,57 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://blog.filatovz.ru/</loc>
-<lastmod>2020-06-22T18:28:13-00:00</lastmod>
+<lastmod>2020-06-22T18:42:26-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://blog.filatovz.ru/tags.html</loc>
-<lastmod>2020-06-22T18:28:13-00:00</lastmod>
+<lastmod>2020-06-22T18:42:26-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://blog.filatovz.ru/categories.html</loc>
-<lastmod>2020-06-22T18:28:13-00:00</lastmod>
+<lastmod>2020-06-22T18:42:26-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://blog.filatovz.ru/authors/</loc>
-<lastmod>2020-06-22T18:28:13-00:00</lastmod>
+<lastmod>2020-06-22T18:42:26-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://blog.filatovz.ru/archives.html</loc>
-<lastmod>2020-06-22T18:28:13-00:00</lastmod>
+<lastmod>2020-06-22T18:42:26-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://blog.filatovz.ru/search.html</loc>
-<lastmod>2020-06-22T18:28:13-00:00</lastmod>
+<lastmod>2020-06-22T18:42:26-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://blog.filatovz.ru/turbo.html</loc>
-<lastmod>2020-06-22T18:28:13-00:00</lastmod>
+<lastmod>2020-06-22T18:42:26-00:00</lastmod>
 <changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>https://blog.filatovz.ru/articles/windows/sinkhronizatsiia-vremeni-v-windows/</loc>
+<lastmod>2020-06-22T11:14:00+03:00</lastmod>
+<changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
@@ -153,6 +160,27 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://blog.filatovz.ru/category/soft</loc>
 <lastmod>2020-06-18T10:14:00+02:30</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>https://blog.filatovz.ru/category/windows</loc>
+<lastmod>2020-06-22T11:14:00+02:30</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>https://blog.filatovz.ru/tag/windows/</loc>
+<lastmod>2020-06-22T11:14:00+02:30</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>https://blog.filatovz.ru/tag/ntp/</loc>
+<lastmod>2020-06-22T11:14:00+02:30</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -271,7 +299,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://blog.filatovz.ru/author/ifilatov/</loc>
-<lastmod>2020-06-22T10:41:00+02:30</lastmod>
+<lastmod>2020-06-22T11:14:00+02:30</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
