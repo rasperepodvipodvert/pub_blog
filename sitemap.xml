@@ -1,307 +1,51 @@
-<?xml version="1.0" encoding="utf-8"?>
-<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd"
-xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
-<url>
-<loc>https://blog.filatovz.ru/</loc>
-<lastmod>2020-06-22T18:42:26-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
-<loc>https://blog.filatovz.ru/tags.html</loc>
-<lastmod>2020-06-22T18:42:26-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
-<loc>https://blog.filatovz.ru/categories.html</loc>
-<lastmod>2020-06-22T18:42:26-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
-<loc>https://blog.filatovz.ru/authors/</loc>
-<lastmod>2020-06-22T18:42:26-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
-<loc>https://blog.filatovz.ru/archives.html</loc>
-<lastmod>2020-06-22T18:42:26-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
-<loc>https://blog.filatovz.ru/search.html</loc>
-<lastmod>2020-06-22T18:42:26-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
-<loc>https://blog.filatovz.ru/turbo.html</loc>
-<lastmod>2020-06-22T18:42:26-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
-<loc>https://blog.filatovz.ru/articles/windows/sinkhronizatsiia-vremeni-v-windows/</loc>
-<lastmod>2020-06-22T11:14:00+03:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
-<loc>https://blog.filatovz.ru/articles/devops/swap_to_file/</loc>
-<lastmod>2020-06-22T10:41:00+03:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
-<loc>https://blog.filatovz.ru/articles/bitrix/bitrix_recepts/</loc>
-<lastmod>2020-06-19T10:40:00+03:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
-<loc>https://blog.filatovz.ru/articles/internet/adguard_dns_mikrotik/</loc>
-<lastmod>2020-06-18T15:00:00+03:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
-<loc>https://blog.filatovz.ru/articles/develop/nastraivaem-zadachi-iz-bitrix24-v-jetbrains-idea/</loc>
-<lastmod>2020-06-18T11:40:00+03:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
-<loc>https://blog.filatovz.ru/articles/misc/not-found/</loc>
-<lastmod>2020-06-18T10:14:00+03:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
-<loc>https://blog.filatovz.ru/articles/soft/soft-dlia-napisaniia-dokumentatsii/</loc>
-<lastmod>2020-06-18T10:14:00+03:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
-<loc>https://blog.filatovz.ru/articles/devops/sysadmin_linux_commands/</loc>
-<lastmod>2020-06-17T10:41:00+03:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
-<loc>https://blog.filatovz.ru/articles/bitrix/bitrix_sendmail/</loc>
-<lastmod>2020-06-17T10:40:00+03:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
-<loc>https://blog.filatovz.ru/articles/develop/jetbrains_live_tamplates/</loc>
-<lastmod>2020-06-16T10:40:00+03:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
-<loc>https://blog.filatovz.ru/category/bitrix</loc>
-<lastmod>2020-06-19T10:40:00+02:30</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
-<loc>https://blog.filatovz.ru/category/develop</loc>
-<lastmod>2020-06-18T11:40:00+02:30</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
-<loc>https://blog.filatovz.ru/category/devops</loc>
-<lastmod>2020-06-22T10:41:00+02:30</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
-<loc>https://blog.filatovz.ru/category/internet</loc>
-<lastmod>2020-06-18T15:00:00+02:30</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
-<loc>https://blog.filatovz.ru/category/misc</loc>
-<lastmod>2020-06-18T10:14:00+02:30</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
-<loc>https://blog.filatovz.ru/category/soft</loc>
-<lastmod>2020-06-18T10:14:00+02:30</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
-<loc>https://blog.filatovz.ru/category/windows</loc>
-<lastmod>2020-06-22T11:14:00+02:30</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
-<loc>https://blog.filatovz.ru/tag/windows/</loc>
-<lastmod>2020-06-22T11:14:00+02:30</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
-<loc>https://blog.filatovz.ru/tag/ntp/</loc>
-<lastmod>2020-06-22T11:14:00+02:30</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
-<loc>https://blog.filatovz.ru/tag/linux/</loc>
-<lastmod>2020-06-22T10:41:00+02:30</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
-<loc>https://blog.filatovz.ru/tag/howto/</loc>
-<lastmod>2020-06-22T10:41:00+02:30</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
-<loc>https://blog.filatovz.ru/tag/best/</loc>
-<lastmod>2020-06-22T10:41:00+02:30</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
-<loc>https://blog.filatovz.ru/tag/devops/</loc>
-<lastmod>2020-06-22T10:41:00+02:30</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
-<loc>https://blog.filatovz.ru/tag/swap/</loc>
-<lastmod>2020-06-22T10:41:00+02:30</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
-<loc>https://blog.filatovz.ru/tag/bitrix/</loc>
-<lastmod>2020-06-19T10:40:00+02:30</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
-<loc>https://blog.filatovz.ru/tag/routers/</loc>
-<lastmod>2020-06-18T15:00:00+02:30</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
-<loc>https://blog.filatovz.ru/tag/internet/</loc>
-<lastmod>2020-06-18T15:00:00+02:30</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
-<loc>https://blog.filatovz.ru/tag/mikrotik/</loc>
-<lastmod>2020-06-18T15:00:00+02:30</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
-<loc>https://blog.filatovz.ru/tag/idea/</loc>
-<lastmod>2020-06-18T11:40:00+02:30</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
-<loc>https://blog.filatovz.ru/tag/bitrix24/</loc>
-<lastmod>2020-06-18T11:40:00+02:30</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
-<loc>https://blog.filatovz.ru/tag/tasks/</loc>
-<lastmod>2020-06-18T11:40:00+02:30</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
-<loc>https://blog.filatovz.ru/tag/soft/</loc>
-<lastmod>2020-06-18T10:14:00+02:30</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
-<loc>https://blog.filatovz.ru/tag/documentations/</loc>
-<lastmod>2020-06-18T10:14:00+02:30</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
-<loc>https://blog.filatovz.ru/tag/vscode/</loc>
-<lastmod>2020-06-18T10:14:00+02:30</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
-<loc>https://blog.filatovz.ru/tag/plugins/</loc>
-<lastmod>2020-06-18T10:14:00+02:30</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
-<loc>https://blog.filatovz.ru/author/ifilatov/</loc>
-<lastmod>2020-06-22T11:14:00+02:30</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.5</priority>
-</url>
-
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url>
+     <loc>https://blog.filatovz.ru/</loc>
+     <lastmod>2020-06-23</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://blog.filatovz.ru/about/</loc>
+     <lastmod>2020-06-23</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://blog.filatovz.ru/Hardware/mikrotik/adguard_dns/</loc>
+     <lastmod>2020-06-23</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://blog.filatovz.ru/develop/bitrix_to_idea_tasks/</loc>
+     <lastmod>2020-06-23</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://blog.filatovz.ru/develop/bitrix/bitrix_recepts/</loc>
+     <lastmod>2020-06-23</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://blog.filatovz.ru/develop/bitrix/bitrix_sendmail/</loc>
+     <lastmod>2020-06-23</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://blog.filatovz.ru/devops/swap_file/</loc>
+     <lastmod>2020-06-23</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://blog.filatovz.ru/devops/sysadmin_linux_commands/</loc>
+     <lastmod>2020-06-23</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://blog.filatovz.ru/soft/jetbrains/jetbrains_live_tamplates/</loc>
+     <lastmod>2020-06-23</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://blog.filatovz.ru/soft/mkdocs/soft_for_documentation/</loc>
+     <lastmod>2020-06-23</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://blog.filatovz.ru/blog/2020/06/23/windows_net_time/</loc>
+     <lastmod>2020-06-23</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://blog.filatovz.ru/blog/2020/06/23/%D0%A1%D0%BB%D0%B5%D0%B7%D0%B0%D0%B5%D0%BC%20%D1%81%20%D0%BF%D0%B5%D0%BB%D0%B8%D0%BA%D0%B0%D0%BD%D0%B0/</loc>
+     <lastmod>2020-06-23</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
 </urlset>
