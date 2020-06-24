@@ -681,6 +681,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#mkdocs" class="md-nav__link">
+    MkDocs
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -802,6 +809,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#mkdocs" class="md-nav__link">
+    MkDocs
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -828,10 +842,9 @@
                 <h2 id="_1">Принцип написания документации<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
 <ul>
 <li>Все изменения конфигов должны попадать в <a href="https://git-scm.com/">git</a></li>
-<li>Документация серверов должна вестить от корня <code>/</code></li>
+<li>Документация серверов должна вестить от корня <ins class="critic">/</ins></li>
 </ul>
-<div class="highlight"><pre><span></span><code><span class="c1"># Пример:</span>
-├── server.ru
+<details class="summary"><summary>Пример</summary><div class="highlight"><pre><span></span><code>├── server.ru
 │   ├── etc
 │   │   ├── cron.d
 │   │   │   ├── 0hourly
@@ -863,16 +876,28 @@
 │   │   ├── vsftpd
 </code></pre></div>
 
+</details>
 <ul>
 <li>У каждого сервера в корне репозитория должен быть файл <code>readme.md</code> с документацией по данному серверу</li>
 </ul>
 <h2 id="_2">Программное обеспечение<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
-<p>Основной инструмент для написания документации это <a href="https://code.visualstudio.com/">VSCODE</a></p>
-<h4 id="visual-studio-code-plugins">Visual Studio Code Plugins<a class="headerlink" href="#visual-studio-code-plugins" title="Permanent link">&para;</a></h4>
+<p>Основной инструмент для создания Markdown файлов, это <a href="https://code.visualstudio.com/">VSCODE</a></p>
+<h3 id="visual-studio-code-plugins">Visual Studio Code Plugins<a class="headerlink" href="#visual-studio-code-plugins" title="Permanent link">&para;</a></h3>
 <ul>
 <li><a href="https://github.com/huntertran/markdown-toc">Auto MarkdownTOC</a> - для генерации содержания</li>
 <li><a href="https://github.com/yzhang-gh/vscode-markdown">Markdown All in One</a> - для подсветки синтаксиса и других полезных сценариев</li>
 </ul>
+<h3 id="mkdocs">MkDocs<a class="headerlink" href="#mkdocs" title="Permanent link">&para;</a></h3>
+<details class="summary"><summary>deploy.bat</summary><div class="admonition info">
+<p class="admonition-title">В данном примере используются два репозитория <code>origin</code>, <code>gh-pages</code> и branch <code>gh-pages</code> для публичного репозитория</p>
+</div>
+<div class="highlight"><pre><span></span><code>set OUTPUTDIR=site
+set GITHUB_PAGES_REMOTE=gh-pages
+set GITHUB_PAGES_BRANCH=gh-pages
+mkdocs gh-deploy -m &quot;Generate MkDocs site&quot; -r %GITHUB_PAGES_REMOTE% -b %GITHUB_PAGES_BRANCH% -d %OUTPUTDIR% --force
+</code></pre></div>
+
+</details>
                 
                   
                 
