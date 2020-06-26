@@ -11,23 +11,23 @@
         <meta name="description" content="Собираю стеки (docker, swarm, docker-compose). Пишу автоматизации">
       
       
-        <link rel="canonical" href="https://blog.filatovz.ru/devops/swap_file/">
+        <link rel="canonical" href="https://blog.filatovz.ru/devops/mysql/mysql_commands/">
       
       
         <meta name="author" content="ifilatov">
       
-      <link rel="shortcut icon" href="../../images/favicon.ico">
+      <link rel="shortcut icon" href="../../../images/favicon.ico">
       <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.3.2">
     
     
       
-        <title>Включаем SWAP в файл</title>
+        <title>Полезные команды MYSQL</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.545621a7.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.545621a7.min.css">
       
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.36d1b78f.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.36d1b78f.min.css">
       
       
         
@@ -45,7 +45,7 @@
     
     
     
-      <link rel="stylesheet" href="../../css/custom.css">
+      <link rel="stylesheet" href="../../../css/custom.css">
     
     
       
@@ -85,6 +85,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#mysql" class="md-skip">
+          Перейти к содержанию
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -94,7 +99,7 @@
   <nav class="md-header-nav md-grid" aria-label="Header">
     <a href="https://blog.filatovz.ru" title="СИСADМИН.blog" class="md-header-nav__button md-logo" aria-label="СИСADМИН.blog">
       
-  <img src="../../images/favicon.png" alt="logo">
+  <img src="../../../images/favicon.png" alt="logo">
 
     </a>
     <label class="md-header-nav__button md-icon" for="__drawer">
@@ -108,7 +113,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              Включаем SWAP в файл
+              Полезные команды MYSQL
             
           </span>
         </div>
@@ -166,7 +171,7 @@
         
   <li class="md-tabs__item">
     
-      <a href="../.." class="md-tabs__link">
+      <a href="../../.." class="md-tabs__link">
         Home
       </a>
     
@@ -184,7 +189,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../../Hardware/mikrotik/adguard_dns/" class="md-tabs__link">
+        <a href="../../../Hardware/mikrotik/adguard_dns/" class="md-tabs__link">
           Hardware
         </a>
       
@@ -199,7 +204,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../../develop/bitrix_to_idea_tasks/" class="md-tabs__link">
+        <a href="../../../develop/bitrix_to_idea_tasks/" class="md-tabs__link">
           Develop
         </a>
       
@@ -212,7 +217,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="./" class="md-tabs__link md-tabs__link--active">
+        <a href="../../swap_file/" class="md-tabs__link md-tabs__link--active">
           Devops
         </a>
       
@@ -229,7 +234,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../../soft/jetbrains/jetbrains_live_tamplates/" class="md-tabs__link">
+        <a href="../../../soft/jetbrains/jetbrains_live_tamplates/" class="md-tabs__link">
           Soft
         </a>
       
@@ -244,7 +249,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../../blog/2020/06/23/windows_net_time/" class="md-tabs__link">
+        <a href="../../../blog/2020/06/23/windows_net_time/" class="md-tabs__link">
           Blog
         </a>
       
@@ -268,7 +273,7 @@
   <label class="md-nav__title" for="__drawer">
     <a href="https://blog.filatovz.ru" title="СИСADМИН.blog" class="md-nav__button md-logo" aria-label="СИСADМИН.blog">
       
-  <img src="../../images/favicon.png" alt="logo">
+  <img src="../../../images/favicon.png" alt="logo">
 
     </a>
     СИСADМИН.blog
@@ -282,7 +287,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../.." title="Home" class="md-nav__link">
+    <a href="../../.." title="Home" class="md-nav__link">
       Home
     </a>
   </li>
@@ -294,7 +299,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../about/" title="About" class="md-nav__link">
+    <a href="../../../about/" title="About" class="md-nav__link">
       About
     </a>
   </li>
@@ -356,7 +361,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../Hardware/mikrotik/adguard_dns/" title="Настраиваем свой микротик на блокировку рекламы" class="md-nav__link">
+    <a href="../../../Hardware/mikrotik/adguard_dns/" title="Настраиваем свой микротик на блокировку рекламы" class="md-nav__link">
       Настраиваем свой микротик на блокировку рекламы
     </a>
   </li>
@@ -403,7 +408,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../develop/bitrix_to_idea_tasks/" title="Настраиваем задачи из bitrix24 в jetbrains idea" class="md-nav__link">
+    <a href="../../../develop/bitrix_to_idea_tasks/" title="Настраиваем задачи из bitrix24 в jetbrains idea" class="md-nav__link">
       Настраиваем задачи из bitrix24 в jetbrains idea
     </a>
   </li>
@@ -440,7 +445,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../develop/bitrix/bitrix_recepts/" title="Рецепты для 1С Bitrix" class="md-nav__link">
+    <a href="../../../develop/bitrix/bitrix_recepts/" title="Рецепты для 1С Bitrix" class="md-nav__link">
       Рецепты для 1С Bitrix
     </a>
   </li>
@@ -452,7 +457,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../develop/bitrix/bitrix_sendmail/" title="Проверка отправки почты из bitrix" class="md-nav__link">
+    <a href="../../../develop/bitrix/bitrix_sendmail/" title="Проверка отправки почты из bitrix" class="md-nav__link">
       Проверка отправки почты из bitrix
     </a>
   </li>
@@ -499,18 +504,11 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-    
-    <a href="./" title="Включаем SWAP в файл" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../../swap_file/" title="Включаем SWAP в файл" class="md-nav__link">
       Включаем SWAP в файл
     </a>
-    
   </li>
 
         
@@ -520,7 +518,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../sysadmin_linux_commands/" title="Команды для linux сисадмина" class="md-nav__link">
+    <a href="../../sysadmin_linux_commands/" title="Команды для linux сисадмина" class="md-nav__link">
       Команды для linux сисадмина
     </a>
   </li>
@@ -557,7 +555,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../Proxmox/%D1%80%D0%B5%D0%BF%D0%BE%D0%B7%D0%B8%D1%82%D0%BE%D1%80%D0%B8%D0%B9/" title="Репозиторий" class="md-nav__link">
+    <a href="../../Proxmox/%D1%80%D0%B5%D0%BF%D0%BE%D0%B7%D0%B8%D1%82%D0%BE%D1%80%D0%B8%D0%B9/" title="Репозиторий" class="md-nav__link">
       Репозиторий
     </a>
   </li>
@@ -572,10 +570,12 @@
           
           
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5-4" type="checkbox" id="nav-5-4">
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5-4" type="checkbox" id="nav-5-4" checked>
     
     <label class="md-nav__link" for="nav-5-4">
       Mysql
@@ -597,11 +597,60 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="../mysql/mysql_commands/" title="Полезные команды MYSQL" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Полезные команды MYSQL
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"/></svg>
+        </span>
+      </label>
+    
+    <a href="./" title="Полезные команды MYSQL" class="md-nav__link md-nav__link--active">
       Полезные команды MYSQL
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Содержание">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      Содержание
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    Пользователь
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    База данных
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -671,7 +720,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../soft/jetbrains/jetbrains_live_tamplates/" title="Добавляем Live Templates в Jetbrains idea" class="md-nav__link">
+    <a href="../../../soft/jetbrains/jetbrains_live_tamplates/" title="Добавляем Live Templates в Jetbrains idea" class="md-nav__link">
       Добавляем Live Templates в Jetbrains idea
     </a>
   </li>
@@ -713,7 +762,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../soft/mkdocs/soft_for_documentation/" title="Софт для написания документации" class="md-nav__link">
+    <a href="../../../soft/mkdocs/soft_for_documentation/" title="Софт для написания документации" class="md-nav__link">
       Софт для написания документации
     </a>
   </li>
@@ -760,7 +809,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../blog/2020/06/23/windows_net_time/" title="(06/23/20) Синхронизация времени в Windows" class="md-nav__link">
+    <a href="../../../blog/2020/06/23/windows_net_time/" title="(06/23/20) Синхронизация времени в Windows" class="md-nav__link">
       (06/23/20) Синхронизация времени в Windows
     </a>
   </li>
@@ -772,7 +821,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../blog/2020/06/23/%D0%A1%D0%BB%D0%B5%D0%B7%D0%B0%D0%B5%D0%BC%20%D1%81%20%D0%BF%D0%B5%D0%BB%D0%B8%D0%BA%D0%B0%D0%BD%D0%B0/" title="(06/23/20) Слезаем с пеликана" class="md-nav__link">
+    <a href="../../../blog/2020/06/23/%D0%A1%D0%BB%D0%B5%D0%B7%D0%B0%D0%B5%D0%BC%20%D1%81%20%D0%BF%D0%B5%D0%BB%D0%B8%D0%BA%D0%B0%D0%BD%D0%B0/" title="(06/23/20) Слезаем с пеликана" class="md-nav__link">
       (06/23/20) Слезаем с пеликана
     </a>
   </li>
@@ -790,6 +839,45 @@
               </div>
             
             
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Содержание">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      Содержание
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    Пользователь
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    База данных
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content">
             <article class="md-content__inner md-typeset">
@@ -799,15 +887,21 @@
                   
                 
                 
-                  <h1>Включаем SWAP в файл</h1>
-                
-                <p>Чтобы включить swap в файл делаем следующее:</p>
-<div class="highlight"><pre><span></span><code>sudo dd <span class="k">if</span><span class="o">=</span>/dev/zero <span class="nv">of</span><span class="o">=</span>/var/swapfile <span class="nv">bs</span><span class="o">=</span>1M <span class="nv">count</span><span class="o">=</span><span class="m">2048</span>              <span class="c1"># создаем пустой файл нужного обьема, в данном случае 2ГБ</span>
-sudo chmod <span class="m">600</span> /var/swapfile                                        <span class="c1"># меняем права</span>
-sudo mkswap /var/swapfile                                           <span class="c1"># включаем своп</span>
-<span class="nb">echo</span> /var/swapfile none swap defaults <span class="m">0</span> <span class="m">0</span> <span class="p">|</span> sudo tee -a /etc/fstab  <span class="c1"># добавляем в автомонтирование при старте системы</span>
-sudo swapon -a                                                      <span class="c1"># проверяем, все ли ок</span>
+                <h1 id="mysql">Полезные команды MYSQL<a class="headerlink" href="#mysql" title="Permanent link">&para;</a></h1>
+<h2 id="_1">Пользователь<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<details class="summary"><summary>Показать права пользователя <code>user</code></summary><div class="highlight"><pre><span></span><code><span class="k">SHOW</span> <span class="n">GRANTS</span> <span class="k">FOR</span> <span class="s1">&#39;user&#39;</span><span class="o">@</span><span class="s1">&#39;%&#39;</span><span class="p">;</span>
 </code></pre></div>
+
+</details>
+<details class="summary"><summary>Установить права для пользователя <code>user</code></summary><div class="highlight"><pre><span></span><code><span class="k">ALTER</span> <span class="n">USER</span> <span class="s1">&#39;user&#39;</span><span class="o">@</span><span class="s1">&#39;%&#39;</span> <span class="n">IDENTIFIED</span> <span class="k">BY</span> <span class="s1">&#39;p@sSwOrD&#39;</span><span class="p">;</span>
+</code></pre></div>
+
+</details>
+<h2 id="_2">База данных<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<details class="summary"><summary>Создать БД в кодировке utf8mb4_unicode_ci</summary><div class="highlight"><pre><span></span><code><span class="k">create</span> <span class="k">database</span> <span class="k">IF</span> <span class="k">NOT</span> <span class="k">EXISTS</span> <span class="n">db</span><span class="p">.</span><span class="n">name</span> <span class="k">CHARACTER</span> <span class="kt">SET</span> <span class="n">utf8mb4</span> <span class="k">COLLATE</span> <span class="n">utf8mb4_unicode_ci</span><span class="p">;</span>
+</code></pre></div>
+
+</details>
                 
                   
                 
@@ -828,7 +922,7 @@ sudo swapon -a                                                      <span class=
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
         
-          <a href="../../develop/bitrix/bitrix_sendmail/" title="Проверка отправки почты из bitrix" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../../Proxmox/%D1%80%D0%B5%D0%BF%D0%BE%D0%B7%D0%B8%D1%82%D0%BE%D1%80%D0%B8%D0%B9/" title="Репозиторий" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-footer-nav__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
             </div>
@@ -837,19 +931,19 @@ sudo swapon -a                                                      <span class=
                 <span class="md-footer-nav__direction">
                   Назад
                 </span>
-                Проверка отправки почты из bitrix
+                Репозиторий
               </div>
             </div>
           </a>
         
         
-          <a href="../sysadmin_linux_commands/" title="Команды для linux сисадмина" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../../../soft/jetbrains/jetbrains_live_tamplates/" title="Добавляем Live Templates в Jetbrains idea" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-footer-nav__title">
               <div class="md-ellipsis">
                 <span class="md-footer-nav__direction">
                   Вперед
                 </span>
-                Команды для linux сисадмина
+                Добавляем Live Templates в Jetbrains idea
               </div>
             </div>
             <div class="md-footer-nav__button md-icon">
@@ -876,20 +970,20 @@ sudo swapon -a                                                      <span class=
       
     </div>
     
-      <script src="../../assets/javascripts/vendor.de50e36d.min.js"></script>
-      <script src="../../assets/javascripts/bundle.38f5c9b5.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "\u041a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u0442\u044c \u0432 \u0431\u0443\u0444\u0435\u0440", "clipboard.copied": "\u0421\u043a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u043d\u043e \u0432 \u0431\u0443\u0444\u0435\u0440", "search.config.lang": "ru", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "\u041d\u0430\u0447\u043d\u0438\u0442\u0435 \u043f\u0435\u0447\u0430\u0442\u0430\u0442\u044c \u0434\u043b\u044f \u043f\u043e\u0438\u0441\u043a\u0430", "search.result.none": "\u0421\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439 \u043d\u0435 \u043d\u0430\u0439\u0434\u0435\u043d\u043e", "search.result.one": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e 1 \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0435", "search.result.other": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e # \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439"}</script>
+      <script src="../../../assets/javascripts/vendor.de50e36d.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.38f5c9b5.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "\u041a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u0442\u044c \u0432 \u0431\u0443\u0444\u0435\u0440", "clipboard.copied": "\u0421\u043a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u043d\u043e \u0432 \u0431\u0443\u0444\u0435\u0440", "search.config.lang": "ru", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "\u041d\u0430\u0447\u043d\u0438\u0442\u0435 \u043f\u0435\u0447\u0430\u0442\u0430\u0442\u044c \u0434\u043b\u044f \u043f\u043e\u0438\u0441\u043a\u0430", "search.result.none": "\u0421\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439 \u043d\u0435 \u043d\u0430\u0439\u0434\u0435\u043d\u043e", "search.result.one": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e 1 \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0435", "search.result.other": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e # \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439"}</script>
       
       <script>
         app = initialize({
-          base: "../..",
+          base: "../../..",
           features: ["tabs"],
           search: Object.assign({
-            worker: "../../assets/javascripts/worker/search.9b3611bd.min.js"
+            worker: "../../../assets/javascripts/worker/search.9b3611bd.min.js"
           }, typeof search !== "undefined" && search)
         })
       </script>
       
-        <script src="../../search/main.js"></script>
+        <script src="../../../search/main.js"></script>
       
     
   </body>
