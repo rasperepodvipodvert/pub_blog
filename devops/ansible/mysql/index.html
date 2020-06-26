@@ -11,7 +11,7 @@
         <meta name="description" content="Собираю стеки (docker, swarm, docker-compose). Пишу автоматизации">
       
       
-        <link rel="canonical" href="https://blog.filatovz.ru/develop/bitrix/bitrix_sendmail/">
+        <link rel="canonical" href="https://blog.filatovz.ru/devops/ansible/mysql/">
       
       
         <meta name="author" content="ifilatov">
@@ -21,7 +21,7 @@
     
     
       
-        <title>Проверка отправки почты из bitrix</title>
+        <title>mysql_user</title>
       
     
     
@@ -85,6 +85,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#mysql" class="md-skip">
+          Перейти к содержанию
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -108,7 +113,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              Проверка отправки почты из bitrix
+              mysql_user
             
           </span>
         </div>
@@ -199,7 +204,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../../bitrix_to_idea_tasks/" class="md-tabs__link md-tabs__link--active">
+        <a href="../../../develop/bitrix_to_idea_tasks/" class="md-tabs__link">
           Develop
         </a>
       
@@ -212,7 +217,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../../../devops/swap_file/" class="md-tabs__link">
+        <a href="../../swap_file/" class="md-tabs__link md-tabs__link--active">
           Devops
         </a>
       
@@ -376,12 +381,10 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" checked>
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
     
     <label class="md-nav__link" for="nav-4">
       Develop
@@ -405,7 +408,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../bitrix_to_idea_tasks/" title="Настраиваем задачи из bitrix24 в jetbrains idea" class="md-nav__link">
+    <a href="../../../develop/bitrix_to_idea_tasks/" title="Настраиваем задачи из bitrix24 в jetbrains idea" class="md-nav__link">
       Настраиваем задачи из bitrix24 в jetbrains idea
     </a>
   </li>
@@ -415,12 +418,10 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4-2" type="checkbox" id="nav-4-2" checked>
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4-2" type="checkbox" id="nav-4-2">
     
     <label class="md-nav__link" for="nav-4-2">
       Bitrix
@@ -444,7 +445,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../bitrix_recepts/" title="Рецепты для 1С Bitrix" class="md-nav__link">
+    <a href="../../../develop/bitrix/bitrix_recepts/" title="Рецепты для 1С Bitrix" class="md-nav__link">
       Рецепты для 1С Bitrix
     </a>
   </li>
@@ -454,39 +455,34 @@
           
           
 
+
+  <li class="md-nav__item">
+    <a href="../../../develop/bitrix/bitrix_sendmail/" title="Проверка отправки почты из bitrix" class="md-nav__link">
+      Проверка отправки почты из bitrix
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
   
 
 
-  <li class="md-nav__item md-nav__item--active">
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-    
-    <a href="./" title="Проверка отправки почты из bitrix" class="md-nav__link md-nav__link--active">
-      Проверка отправки почты из bitrix
-    </a>
-    
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-    
-      
-      
-      
-
-
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5" checked>
     
     <label class="md-nav__link" for="nav-5">
       Devops
@@ -510,7 +506,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../devops/swap_file/" title="Включаем SWAP в файл" class="md-nav__link">
+    <a href="../../swap_file/" title="Включаем SWAP в файл" class="md-nav__link">
       Включаем SWAP в файл
     </a>
   </li>
@@ -522,7 +518,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../devops/sysadmin_linux_commands/" title="Команды для linux сисадмина" class="md-nav__link">
+    <a href="../../sysadmin_linux_commands/" title="Команды для linux сисадмина" class="md-nav__link">
       Команды для linux сисадмина
     </a>
   </li>
@@ -559,7 +555,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../devops/Proxmox/%D1%80%D0%B5%D0%BF%D0%BE%D0%B7%D0%B8%D1%82%D0%BE%D1%80%D0%B8%D0%B9/" title="Репозиторий" class="md-nav__link">
+    <a href="../../Proxmox/%D1%80%D0%B5%D0%BF%D0%BE%D0%B7%D0%B8%D1%82%D0%BE%D1%80%D0%B8%D0%B9/" title="Репозиторий" class="md-nav__link">
       Репозиторий
     </a>
   </li>
@@ -574,10 +570,12 @@
           
           
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5-4" type="checkbox" id="nav-5-4">
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5-4" type="checkbox" id="nav-5-4" checked>
     
     <label class="md-nav__link" for="nav-5-4">
       Ansible
@@ -599,11 +597,20 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="../../../devops/ansible/mysql/" title="mysql_user" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+    <a href="./" title="mysql_user" class="md-nav__link md-nav__link--active">
       mysql_user
     </a>
+    
   </li>
 
         
@@ -643,7 +650,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../devops/mysql/mysql_commands/" title="Полезные команды MYSQL" class="md-nav__link">
+    <a href="../../mysql/mysql_commands/" title="Полезные команды MYSQL" class="md-nav__link">
       Полезные команды MYSQL
     </a>
   </li>
@@ -834,6 +841,21 @@
               </div>
             
             
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Содержание">
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content">
             <article class="md-content__inner md-typeset">
@@ -843,16 +865,48 @@
                   
                 
                 
-                  <h1>Проверка отправки почты из bitrix</h1>
-                
-                <div class="highlight"><pre><span></span><code><span class="cp">&lt;?php</span>
-<span class="k">if</span> <span class="p">(</span><span class="nb">mail</span><span class="p">(</span><span class="s2">&quot;my_mail@mail.ru&quot;</span><span class="p">,</span> <span class="s2">&quot;заголовок&quot;</span><span class="p">,</span> <span class="s2">&quot;текст&quot;</span><span class="p">))</span> <span class="p">{</span>
-    <span class="k">echo</span> <span class="s1">&#39;Отправлено&#39;</span><span class="p">;</span>
-<span class="p">}</span>
-<span class="k">else</span> <span class="p">{</span>
-    <span class="k">echo</span> <span class="s1">&#39;Не отправлено&#39;</span><span class="p">;</span>
-<span class="p">}</span>
-<span class="cp">?&gt;</span><span class="x"></span>
+                <h1 id="mysql">Не очевидные моменты работы с MySQL<a class="headerlink" href="#mysql" title="Permanent link">&para;</a></h1>
+<div class="highlight"><pre><span></span><code><span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Генерируем факт, что пароль у нас такой, и используем его дальше</span>
+  <span class="nt">set_fact</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">db_password={{db.password}}</span>
+
+<span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="s">&quot;Удаление</span><span class="nv"> </span><span class="s">базы</span><span class="nv"> </span><span class="s">данных</span><span class="nv"> </span><span class="s">{{db.name}}&quot;</span>
+  <span class="nt">mysql_db</span><span class="p">:</span>
+    <span class="nt">login_user</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">root</span>
+    <span class="nt">login_password</span><span class="p">:</span> <span class="s">&quot;{{db.root_password}}&quot;</span>
+    <span class="nt">login_host</span><span class="p">:</span> <span class="s">&quot;{{db.host}}&quot;</span>
+    <span class="nt">name</span><span class="p">:</span> <span class="s">&quot;{{db.name}}&quot;</span>
+    <span class="nt">state</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">absent</span>
+
+<span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="s">&quot;Создание</span><span class="nv"> </span><span class="s">базы</span><span class="nv"> </span><span class="s">данных</span><span class="nv"> </span><span class="s">{{db.name}}&quot;</span>
+  <span class="nt">mysql_db</span><span class="p">:</span>
+    <span class="nt">login_user</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">root</span>
+    <span class="nt">login_password</span><span class="p">:</span> <span class="s">&quot;{{db.root_password}}&quot;</span>
+    <span class="nt">login_host</span><span class="p">:</span> <span class="s">&quot;{{db.host}}&quot;</span>
+    <span class="nt">name</span><span class="p">:</span> <span class="s">&quot;{{db.name}}&quot;</span>
+    <span class="nt">encoding</span><span class="p">:</span> <span class="s">&quot;utf8&quot;</span>
+    <span class="nt">state</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">present</span>
+
+<span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="s">&quot;Удаление</span><span class="nv"> </span><span class="s">пользователя</span><span class="nv"> </span><span class="s">{{db.user}}&quot;</span>
+  <span class="nt">mysql_user</span><span class="p">:</span>
+    <span class="nt">login_user</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">root</span>
+    <span class="nt">login_password</span><span class="p">:</span> <span class="s">&quot;{{db.root_password}}&quot;</span>
+    <span class="nt">login_host</span><span class="p">:</span> <span class="s">&quot;{{db.host}}&quot;</span>
+    <span class="nt">name</span><span class="p">:</span> <span class="s">&quot;{{db.user}}&quot;</span>
+    <span class="nt">host_all</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">yes</span>
+    <span class="nt">state</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">absent</span>
+
+<span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="s">&quot;Создание</span><span class="nv"> </span><span class="s">пользователя</span><span class="nv"> </span><span class="s">{{db.user}}</span><span class="nv"> </span><span class="s">{{db_password}}&quot;</span>
+  <span class="nt">mysql_user</span><span class="p">:</span>
+    <span class="nt">login_user</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">root</span>
+    <span class="nt">login_password</span><span class="p">:</span> <span class="s">&quot;{{db.root_password}}&quot;</span>
+    <span class="nt">login_host</span><span class="p">:</span> <span class="s">&quot;{{db.host}}&quot;</span>
+    <span class="nt">name</span><span class="p">:</span> <span class="s">&quot;{{db.user}}&quot;</span>
+    <span class="nt">password</span><span class="p">:</span> <span class="s">&quot;{{</span><span class="nv"> </span><span class="s">db_password</span><span class="nv"> </span><span class="s">}}&quot;</span>
+    <span class="nt">update_password</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">on_create</span>
+    <span class="nt">priv</span><span class="p">:</span> <span class="s">&#39;{{db.name}}.*:ALL&#39;</span>
+    <span class="nt">state</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">present</span>
+    <span class="nt">host</span><span class="p">:</span> <span class="s">&#39;%&#39;</span>
+  <span class="nt">no_log</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">no</span>
 </code></pre></div>
                 
                   
@@ -874,7 +928,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
         
-          <a href="../bitrix_recepts/" title="Рецепты для 1С Bitrix" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../../Proxmox/%D1%80%D0%B5%D0%BF%D0%BE%D0%B7%D0%B8%D1%82%D0%BE%D1%80%D0%B8%D0%B9/" title="Репозиторий" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-footer-nav__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
             </div>
@@ -883,19 +937,19 @@
                 <span class="md-footer-nav__direction">
                   Назад
                 </span>
-                Рецепты для 1С Bitrix
+                Репозиторий
               </div>
             </div>
           </a>
         
         
-          <a href="../../../devops/swap_file/" title="Включаем SWAP в файл" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../../mysql/mysql_commands/" title="Полезные команды MYSQL" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-footer-nav__title">
               <div class="md-ellipsis">
                 <span class="md-footer-nav__direction">
                   Вперед
                 </span>
-                Включаем SWAP в файл
+                Полезные команды MYSQL
               </div>
             </div>
             <div class="md-footer-nav__button md-icon">
