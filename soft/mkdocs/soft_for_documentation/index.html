@@ -1154,6 +1154,26 @@
         
           <li class="md-nav__item">
   <a href="#_3" class="md-nav__link">
+    Плагины
+  </a>
+  
+    <nav class="md-nav" aria-label="Плагины">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#awesome-pages" class="md-nav__link">
+    awesome-pages
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
     Ссылки
   </a>
   
@@ -1302,6 +1322,26 @@
         
           <li class="md-nav__item">
   <a href="#_3" class="md-nav__link">
+    Плагины
+  </a>
+  
+    <nav class="md-nav" aria-label="Плагины">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#awesome-pages" class="md-nav__link">
+    awesome-pages
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
     Ссылки
   </a>
   
@@ -1392,7 +1432,32 @@
 </ul>
 <h3 id="mkdocs">MkDocs<a class="headerlink" href="#mkdocs" title="Permanent link">&para;</a></h3>
 <p>Данный инструмент я использую для ведения документации, которую необходимо потом передать заказчику.</p>
-<h4 id="_3">Ссылки<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h4>
+<h4 id="_3">Плагины<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h4>
+<h5 id="awesome-pages"><a href="https://github.com/lukasgeiter/mkdocs-awesome-pages-plugin">awesome-pages</a><a class="headerlink" href="#awesome-pages" title="Permanent link">&para;</a></h5>
+<p>Плагин MkDocs, упрощает настройку заголовков страниц и их порядка
+Awesome-pages позволяет настраивать отображение навигации без необходимости настраивать полную структуру меню в вашем <code>mkdocs.yml</code>
+Все это делается с помощью небольшого файла конфигурации, который находится непосредственно в соответствующем каталоге вашей документации. Очень удобно!</p>
+<div class="admonition note">
+<p class="admonition-title">Этот плагин работает без <code>nav</code> или <code>pages</code> файле mkdocs.yml. Поддерживается и <code>nav</code>, но вы можете не получить ожидаемых результатов, особенно если ваша структура навигации не соответствует структуре файла.</p>
+</div>
+<p>Установка:</p>
+<div class="highlight"><pre><span></span><code>pip install mkdocs-awesome-pages-plugin
+</code></pre></div>
+
+<p>Добавте это в <code>mkdocs.yml</code></p>
+<div class="highlight"><pre><span></span><code><span class="nt">plugins</span><span class="p">:</span>
+    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">search</span>
+    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">awesome-pages</span>
+</code></pre></div>
+
+<p>Использование:</p>
+<p>Просто создаем файл <code>.pages</code> в директории где хотим использовать плагин и пишем в него параметры</p>
+<div class="highlight"><pre><span></span><code>collapse_single_pages: <span class="nb">true</span> <span class="c1"># Не будет показываться название директории, в место него будет показан заголовок первого `md` файла в каталоге</span>
+collapse: <span class="nb">true</span>              <span class="c1"># Запрещает/разрешает сворачивание раздела</span>
+hide: <span class="nb">true</span>                  <span class="c1"># Скрывает директорию</span>
+</code></pre></div>
+
+<h4 id="_4">Ссылки<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h4>
 <ul>
 <li><a href="https://squidfunk.github.io/mkdocs-material/">Mkdocs Material</a> - mkdocs с темой оформления material</li>
 </ul>
