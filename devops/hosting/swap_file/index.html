@@ -1326,10 +1326,13 @@ sudo swapon -a                                                      <span class=
 </code></pre></div>
 
 <h2 id="_2">Тюнинг<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code><span class="c1"># С какого момента используем swap</span>
-sysctl vm.swappiness<span class="o">=</span><span class="m">10</span>
+<div class="admonition info">
+<p class="admonition-title">Модернизацией этих параметров я добился снижения потребления оперативки на своем zabbix сервере, что позволит запихнуть в него еще какое-то количество метрик!</p>
+</div>
+<div class="highlight"><pre><span></span><code><span class="c1"># С какого момента используем swap 100%-90% = после использования 10% оперативки</span>
+sysctl vm.swappiness<span class="o">=</span><span class="m">90</span>
 <span class="c1"># Сохраняем чтобы применялось после перезагрузки</span>
-<span class="nb">echo</span> <span class="s1">&#39;vm.swappiness=10&#39;</span> <span class="p">|</span> tee -a /etc/sysctl.d/swap.conf
+<span class="nb">echo</span> <span class="s1">&#39;vm.swappiness=90&#39;</span> <span class="p">|</span> tee -a /etc/sysctl.d/swap.conf
 
 <span class="c1"># Чем меньше параметр, тем больше используется swap</span>
 sysctl vm.vfs_cache_pressure<span class="o">=</span><span class="m">50</span>
@@ -1337,6 +1340,10 @@ vm.vfs_cache_pressure <span class="o">=</span> <span class="m">50</span>
 
 <span class="c1"># Сохраняем чтобы применялось после перезагрузки</span>
 <span class="nb">echo</span> <span class="s1">&#39;vm.vfs_cache_pressure=50&#39;</span> <span class="p">|</span> tee -a /etc/sysctl.d/swap.conf
+
+
+<span class="c1"># Устанавливаем zram - систему сжатия памяти</span>
+apt install linux-image-extra-virtual zram-config
 </code></pre></div>
                 
                   
