@@ -11,7 +11,7 @@
         <meta name="description" content="Собираю стеки (docker, swarm, docker-compose). Пишу автоматизации">
       
       
-        <link rel="canonical" href="https://blog.filatovz.ru/develop/bitrix/bitrix_recepts/">
+        <link rel="canonical" href="https://blog.filatovz.ru/devops/docker/nginx_docker_fail2ban/">
       
       
         <meta name="author" content="ifilatov">
@@ -21,7 +21,7 @@
     
     
       
-        <title>Рецепты для 1С Bitrix</title>
+        <title>fail2ban для nginx в докере</title>
       
     
     
@@ -86,7 +86,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#_1" class="md-skip">
+        <a href="#fail2ban-nginx" class="md-skip">
           Перейти к содержанию
         </a>
       
@@ -113,7 +113,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              Рецепты для 1С Bitrix
+              fail2ban для nginx в докере
             
           </span>
         </div>
@@ -204,7 +204,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../../bitrix_to_idea_tasks/" class="md-tabs__link md-tabs__link--active">
+        <a href="../../../develop/bitrix_to_idea_tasks/" class="md-tabs__link">
           Develop
         </a>
       
@@ -221,7 +221,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../../../devops/Proxmox/%D1%80%D0%B5%D0%BF%D0%BE%D0%B7%D0%B8%D1%82%D0%BE%D1%80%D0%B8%D0%B9/" class="md-tabs__link">
+        <a href="../../Proxmox/%D1%80%D0%B5%D0%BF%D0%BE%D0%B7%D0%B8%D1%82%D0%BE%D1%80%D0%B8%D0%B9/" class="md-tabs__link">
           Devops
         </a>
       
@@ -448,12 +448,10 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" checked>
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
     
     <label class="md-nav__link" for="nav-4">
       Develop
@@ -477,7 +475,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../bitrix_to_idea_tasks/" title="Настраиваем задачи из bitrix24 в jetbrains idea" class="md-nav__link">
+    <a href="../../../develop/bitrix_to_idea_tasks/" title="Настраиваем задачи из bitrix24 в jetbrains idea" class="md-nav__link">
       Настраиваем задачи из bitrix24 в jetbrains idea
     </a>
   </li>
@@ -487,12 +485,10 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4-2" type="checkbox" id="nav-4-2" checked>
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4-2" type="checkbox" id="nav-4-2">
     
     <label class="md-nav__link" for="nav-4-2">
       Bitrix
@@ -514,97 +510,11 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        Рецепты для 1С Bitrix
-        <span class="md-nav__icon md-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"/></svg>
-        </span>
-      </label>
-    
-    <a href="./" title="Рецепты для 1С Bitrix" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../../../develop/bitrix/bitrix_recepts/" title="Рецепты для 1С Bitrix" class="md-nav__link">
       Рецепты для 1С Bitrix
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary" aria-label="Содержание">
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-      </span>
-      Содержание
-    </label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
-    Инструменты
-  </a>
-  
-    <nav class="md-nav" aria-label="Инструменты">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    Среда разработки
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    Резервное копирование
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
-    Очистка кэша
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
-    Бэкап
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_6" class="md-nav__link">
-    Права на файлы
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#dev-product" class="md-nav__link">
-    Синхронизация DEV -&gt; PRODUCT
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
         
@@ -614,7 +524,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../bitrix_sendmail/" title="Проверка отправки почты из bitrix" class="md-nav__link">
+    <a href="../../../develop/bitrix/bitrix_sendmail/" title="Проверка отправки почты из bitrix" class="md-nav__link">
       Проверка отправки почты из bitrix
     </a>
   </li>
@@ -626,7 +536,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../service_temporarily_unavailable/" title="Service Temporarily Unavailable" class="md-nav__link">
+    <a href="../../../develop/bitrix/service_temporarily_unavailable/" title="Service Temporarily Unavailable" class="md-nav__link">
       Service Temporarily Unavailable
     </a>
   </li>
@@ -668,7 +578,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../python/python2_on_ubuntu2020/" title="Как установить python2 и pip2 на Ubuntu 20.04" class="md-nav__link">
+    <a href="../../../develop/python/python2_on_ubuntu2020/" title="Как установить python2 и pip2 на Ubuntu 20.04" class="md-nav__link">
       Как установить python2 и pip2 на Ubuntu 20.04
     </a>
   </li>
@@ -688,10 +598,12 @@
       
       
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5" checked>
     
     <label class="md-nav__link" for="nav-5">
       Devops
@@ -740,7 +652,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../devops/Proxmox/%D1%80%D0%B5%D0%BF%D0%BE%D0%B7%D0%B8%D1%82%D0%BE%D1%80%D0%B8%D0%B9/" title="Репозиторий" class="md-nav__link">
+    <a href="../../Proxmox/%D1%80%D0%B5%D0%BF%D0%BE%D0%B7%D0%B8%D1%82%D0%BE%D1%80%D0%B8%D0%B9/" title="Репозиторий" class="md-nav__link">
       Репозиторий
     </a>
   </li>
@@ -782,7 +694,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../devops/ansible/mysql/" title="mysql_user" class="md-nav__link">
+    <a href="../../ansible/mysql/" title="mysql_user" class="md-nav__link">
       mysql_user
     </a>
   </li>
@@ -797,10 +709,12 @@
           
           
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5-3" type="checkbox" id="nav-5-3">
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5-3" type="checkbox" id="nav-5-3" checked>
     
     <label class="md-nav__link" for="nav-5-3">
       Docker
@@ -822,11 +736,53 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="../../../devops/docker/nginx_docker_fail2ban/" title="fail2ban для nginx в докере" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        fail2ban для nginx в докере
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"/></svg>
+        </span>
+      </label>
+    
+    <a href="./" title="fail2ban для nginx в докере" class="md-nav__link md-nav__link--active">
       fail2ban для nginx в докере
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Содержание">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      Содержание
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    Конфиги
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -866,7 +822,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../devops/heroku/deploy_python_project/" title="Deploy python code to heroku" class="md-nav__link">
+    <a href="../../heroku/deploy_python_project/" title="Deploy python code to heroku" class="md-nav__link">
       Deploy python code to heroku
     </a>
   </li>
@@ -908,7 +864,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../devops/hosting/swap_file/" title="Включаем SWAP в файл" class="md-nav__link">
+    <a href="../../hosting/swap_file/" title="Включаем SWAP в файл" class="md-nav__link">
       Включаем SWAP в файл
     </a>
   </li>
@@ -950,7 +906,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../devops/linux/sysadmin_linux_commands/" title="Команды для linux сисадмина" class="md-nav__link">
+    <a href="../../linux/sysadmin_linux_commands/" title="Команды для linux сисадмина" class="md-nav__link">
       Команды для linux сисадмина
     </a>
   </li>
@@ -992,7 +948,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../devops/mysql/mysql_commands/" title="Полезные команды MYSQL" class="md-nav__link">
+    <a href="../../mysql/mysql_commands/" title="Полезные команды MYSQL" class="md-nav__link">
       Полезные команды MYSQL
     </a>
   </li>
@@ -1034,7 +990,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../devops/zabbix/nginx/" title="Мониторим NGINX" class="md-nav__link">
+    <a href="../../zabbix/nginx/" title="Мониторим NGINX" class="md-nav__link">
       Мониторим NGINX
     </a>
   </li>
@@ -1316,6 +1272,8 @@
 <nav class="md-nav md-nav--secondary" aria-label="Содержание">
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon">
@@ -1327,55 +1285,7 @@
       
         <li class="md-nav__item">
   <a href="#_1" class="md-nav__link">
-    Инструменты
-  </a>
-  
-    <nav class="md-nav" aria-label="Инструменты">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    Среда разработки
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    Резервное копирование
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
-    Очистка кэша
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
-    Бэкап
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_6" class="md-nav__link">
-    Права на файлы
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#dev-product" class="md-nav__link">
-    Синхронизация DEV -&gt; PRODUCT
+    Конфиги
   </a>
   
 </li>
@@ -1396,59 +1306,20 @@
                   
                 
                 
-                  <h1>Рецепты для 1С Bitrix</h1>
-                
-                <h2 id="_1">Инструменты<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<h3 id="_2">Среда разработки<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
-<ul>
-<li><a href="https://habr.com/en/sandbox/73214/">Инструменты для разработки под 1С-Битрикс</a>. Здесь автор расказывает как правильно настроить среду разработки <a href="https://www.jetbrains.com/ru-ru/phpstorm/">PhpStorm</a> и подключиться к проекту.</li>
-</ul>
-<h3 id="_3">Резервное копирование<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
-<p>Как показала практика, бэкапы битрикса лучше делать с помощью <a href="https://www.duplicati.com/">Duplicati</a>. Все прелести этого ПО я не буду описывать выделю лишь только то, что подходит для битрикса:</p>
-<ul class="task-list">
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Хранение бэкапов в облаке</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Шифрование бэкапов, а это значит можете хранить в любом облаке, даже не шипко защищенном</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Автоматические действия до и после резервного копирования, на пример снять дамп БД перед резервным копирование</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Уведомление о успешном/неуспешном резервном копировании</li>
-</ul>
-<h2 id="_4">Очистка кэша<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
-<ul>
-<li><a href="https://qna.habr.com/q/564222">Просто удаляете эту папку и битрикс потом сам пересоздаст кэш по мере потребления</a></li>
-<li><a href="https://iplogic.ru/baza-znaniy/ochistka-papki-upload-v-bitriks-cherez-agent/">Можно еще правильно настроить битрикс</a></li>
-</ul>
-<details class="summary"><summary>code</summary><div class="highlight"><pre><span></span><code>rm -rf ./bitrix/upload/resize_cache
+                <h1 id="fail2ban-nginx">fail2ban для nginx в докере<a class="headerlink" href="#fail2ban-nginx" title="Permanent link">&para;</a></h1>
+<p>Если вы, так же как и я, используете docker для публикации своих приложений в production, то наверняка хотите их защитить с помощью fail2ban от подбора паролей и черезмерной активности!
+Дак вот если все делать по мануалам из интернета - ничего у вапс не получится, а все потому, что iptables (ufw, firewalld) в linux с установленным docker окружением работают несколько иначе!</p>
+<h2 id="_1">Конфиги<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><span class="k">[nginx-badbots]</span>
+<span class="na">enabled</span>  <span class="o">=</span> <span class="s">true</span>
+<span class="na">port</span>     <span class="o">=</span> <span class="s">http,https</span>
+<span class="na">filter</span>   <span class="o">=</span> <span class="s">nginx-badbots</span>
+<span class="na">chain</span>    <span class="o">=</span> <span class="s">DOCKER-USER</span>
+<span class="na">logpath</span>  <span class="o">=</span> <span class="s">/docker/logs/nginx/*ccess.log</span>
+<span class="na">maxretry</span> <span class="o">=</span> <span class="s">1</span>
+<span class="na">findtime</span> <span class="o">=</span> <span class="s">604800</span>
+<span class="na">bantime</span>  <span class="o">=</span> <span class="s">604800</span>
 </code></pre></div>
-
-</details>
-<h2 id="_5">Бэкап<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
-<blockquote>
-<p><a href="https://tuning-soft.ru/articles/bitrix/backup-bitrix.html">Детальное описание</a> резервного копирования от другого автора, полезно к прочтению!</p>
-</blockquote>
-<details class="summary"><summary>Каталоги, которые можно исключить из бэкапа</summary><div class="admonition info">
-<p class="admonition-title">Info</p>
-<p>Для версии битрикса &lt; v12</p>
-</div>
-<div class="highlight"><pre><span></span><code><span class="na">/bitrix/backup          # бэкапы самого битрикса</span>
-<span class="na">/bitrix/cache           # неуправляемый кэш</span>
-<span class="na">/bitrix/managed_cache   # управляемый кэш</span>
-<span class="na">/bitrix/stack_cache     # файлы кэша с &quot;вытеснением&quot;</span>
-<span class="na">/upload/resize_cache    # кэш ресайза изображений</span>
-<span class="na">/bitrix/wizards         # мастера и демо-решения</span>
-</code></pre></div>
-
-</details>
-<h2 id="_6">Права на файлы<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
-<details class="summary"><summary>code</summary><div class="highlight"><pre><span></span><code>find /var/www/test.com/public_html -type d -exec chmod <span class="m">0770</span> <span class="o">{}</span> <span class="se">\;</span>
-find /var/www/test.com/public_html -type f -exec chmod <span class="m">0660</span> <span class="o">{}</span> <span class="se">\;</span>
-</code></pre></div>
-
-</details>
-<h2 id="dev-product">Синхронизация DEV -&gt; PRODUCT<a class="headerlink" href="#dev-product" title="Permanent link">&para;</a></h2>
-<p>Самый простой способ синхронизации 1С Bitrix управление сайтом с сервером для разработки (deploy) - через резервную копию в облако #bitrix</p>
-<div class="admonition info">
-<p class="admonition-title">Info</p>
-<p>Данный способ хорош только в том случае, если вы все еще живете без #git</p>
-</div>
                 
                   
                 
@@ -1469,7 +1340,7 @@ find /var/www/test.com/public_html -type f -exec chmod <span class="m">0660</spa
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
         
-          <a href="../../bitrix_to_idea_tasks/" title="Настраиваем задачи из bitrix24 в jetbrains idea" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../../ansible/mysql/" title="mysql_user" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-footer-nav__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
             </div>
@@ -1478,19 +1349,19 @@ find /var/www/test.com/public_html -type f -exec chmod <span class="m">0660</spa
                 <span class="md-footer-nav__direction">
                   Назад
                 </span>
-                Настраиваем задачи из bitrix24 в jetbrains idea
+                mysql_user
               </div>
             </div>
           </a>
         
         
-          <a href="../bitrix_sendmail/" title="Проверка отправки почты из bitrix" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../../heroku/deploy_python_project/" title="Deploy python code to heroku" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-footer-nav__title">
               <div class="md-ellipsis">
                 <span class="md-footer-nav__direction">
                   Вперед
                 </span>
-                Проверка отправки почты из bitrix
+                Deploy python code to heroku
               </div>
             </div>
             <div class="md-footer-nav__button md-icon">
