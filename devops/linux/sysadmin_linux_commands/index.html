@@ -945,6 +945,13 @@
       
         <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
+    Поиск
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
     Работа с текстом
   </a>
   
@@ -964,7 +971,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
+  <a href="#_4" class="md-nav__link">
     Рецепты
   </a>
   
@@ -1462,6 +1469,13 @@
       
         <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
+    Поиск
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
     Работа с текстом
   </a>
   
@@ -1481,7 +1495,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
+  <a href="#_4" class="md-nav__link">
     Рецепты
   </a>
   
@@ -1551,12 +1565,16 @@
 <li><a href="https://www.f-notes.info/linux:linux_command">Полезные команды на одном листе</a></li>
 <li><a href="https://codeby.net/threads/shpargalka-razvedka-i-audit-servera.63524/">[Шпаргалка] Разведка и аудит сервера</a></li>
 </ul>
-<h2 id="_2">Работа с текстом<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<h2 id="_2">Поиск<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code>find /usr/bin -type f -mtime -1 <span class="c1"># найти измененные файлы за сутки</span>
+</code></pre></div>
+
+<h2 id="_3">Работа с текстом<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
 <h4 id="ssh">Показать всех кто коннектился по <code>ssh</code><a class="headerlink" href="#ssh" title="Permanent link">&para;</a></h4>
 <div class="highlight"><pre><span></span><code>grep <span class="s1">&#39;Connection closed&#39;</span> /var/log/secure <span class="p">|</span>cut -d <span class="s1">&#39; &#39;</span> -f <span class="m">9</span><span class="p">|</span>sort<span class="p">|</span>uniq -c<span class="p">|</span>sort -n
 </code></pre></div>
 
-<h2 id="_3">Рецепты<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<h2 id="_4">Рецепты<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
 <details class="summary"><summary>Проверка водящих подключений к системе.</summary><div class="highlight"><pre><span></span><code>lsof -i
 lsof -i :80
 grep <span class="m">80</span> /etc/services
