@@ -8,10 +8,10 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="В сети полно информации как это можно сделать с помощью Boot Camp Assistant, но как без него?">
+        <meta name="description" content="Собираю стеки (docker, swarm, docker-compose). Пишу автоматизации">
       
       
-        <link rel="canonical" href="https://blog.filatovz.ru/Hardware/macbook/install_windows/">
+        <link rel="canonical" href="https://blog.filatovz.ru/Hardware/Raspberry_PI/rpi3_android_tv/">
       
       
         <meta name="author" content="ifilatov">
@@ -21,7 +21,7 @@
     
     
       
-        <title>Установка Windows на MacBook</title>
+        <title>Установка Android TV на Raspberry PI3 b+</title>
       
     
     
@@ -86,7 +86,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#windows-macbook" class="md-skip">
+        <a href="#_1" class="md-skip">
           Перейти к содержанию
         </a>
       
@@ -113,7 +113,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              Установка Windows на MacBook
+              Установка Android TV на Raspberry PI3 b+
             
           </span>
         </div>
@@ -189,7 +189,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../../Raspberry_PI/rpi3_android_tv/" class="md-tabs__link">
+        <a href="./" class="md-tabs__link md-tabs__link--active">
           Hardware
         </a>
       
@@ -361,10 +361,12 @@
           
           
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3-1" type="checkbox" id="nav-3-1">
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3-1" type="checkbox" id="nav-3-1" checked>
     
     <label class="md-nav__link" for="nav-3-1">
       Raspberry PI
@@ -386,11 +388,56 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="../../Raspberry_PI/rpi3_android_tv/" title="Установка Android TV на Raspberry PI3 b+" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Установка Android TV на Raspberry PI3 b+
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"/></svg>
+        </span>
+      </label>
+    
+    <a href="./" title="Установка Android TV на Raspberry PI3 b+" class="md-nav__link md-nav__link--active">
       Установка Android TV на Raspberry PI3 b+
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Содержание">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      Содержание
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    Ссылки
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    Инструкция
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -445,12 +492,10 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3-3" type="checkbox" id="nav-3-3" checked>
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3-3" type="checkbox" id="nav-3-3">
     
     <label class="md-nav__link" for="nav-3-3">
       Macbook
@@ -472,20 +517,11 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-      
-    
-    
-    <a href="./" title="Установка Windows на MacBook" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../../macbook/install_windows/" title="Установка Windows на MacBook" class="md-nav__link">
       Установка Windows на MacBook
     </a>
-    
   </li>
 
         
@@ -1539,8 +1575,30 @@
 <nav class="md-nav md-nav--secondary" aria-label="Содержание">
   
   
-    
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      Содержание
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    Ссылки
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    Инструкция
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -1556,25 +1614,19 @@
                   
                 
                 
-                <h1 id="windows-macbook">Установка Windows на MacBook<a class="headerlink" href="#windows-macbook" title="Permanent link">&para;</a></h1>
-<p>В сети полно информации как это можно сделать с помощью <a href="https://support.apple.com/ru-ru/HT201468">Boot Camp Assistant</a></p>
-<p>Однако, если вы хотите нафиг снести MacOS и поставить на него Windows необходимы драйвера и флешка</p>
-<div class="admonition info">
-<p class="admonition-title">Windows обязательно нужно устанавливать с флешки! Иначе не будут видны диски при установке.</p>
-</div>
+                  <h1>Установка Android TV на Raspberry PI3 b+</h1>
+                
+                <p><img alt="etcher.jpg" src="../etcher.png" /></p>
+<h2 id="_1">Ссылки<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="https://deac-riga.dl.sourceforge.net/project/android-rpi3/atvrpi320160530.zip">Android TV image</a></li>
+<li><a href="https://www.balena.io/etcher/">Etcher</a></li>
+</ul>
+<h2 id="_2">Инструкция<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
 <ol>
-<li>Качаем <a href="https://www.microsoft.com/ru-ru/software-download/windows10">windows10</a> и записываем на флешку</li>
-<li>Качаем <a href="https://support.apple.com/kb/DL1720?locale=en_US">драйвера</a> и записываем на флешку с windows</li>
-<li>Зажимаем <span class="keys"><kbd class="key-alt">Alt</kbd></span> , чтобы выбрать загрузку с флешки, грузимся, ставим винду</li>
-<li>Ставим драйвера, которые записали на флешку, альтернативный способ использовать <a href="https://drp.su/ru">DriverPack</a></li>
+<li>Записываем <a href="https://deac-riga.dl.sourceforge.net/project/android-rpi3/atvrpi320160530.zip">образ</a> через <a href="https://www.balena.io/etcher/">Etcher</a></li>
+<li>Вставляем флешку в RPI3 и запускаем</li>
 </ol>
-<h1 id="_1">Сочетания клавишь<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
-<h2 id="recovery">Recovery<a class="headerlink" href="#recovery" title="Permanent link">&para;</a></h2>
-<p><span class="keys"><kbd class="key-command">Cmd</kbd><span>+</span><kbd class="key-r">R</kbd></span></p>
-<h2 id="recovery-last-macos">Recovery last MacOS<a class="headerlink" href="#recovery-last-macos" title="Permanent link">&para;</a></h2>
-<p><span class="keys"><kbd class="key-command">Cmd</kbd><span>+</span><kbd class="key-alt">Alt</kbd><span>+</span><kbd class="key-r">R</kbd></span></p>
-<h2 id="boot-menu">Boot Menu<a class="headerlink" href="#boot-menu" title="Permanent link">&para;</a></h2>
-<p><span class="keys"><kbd class="key-alt">Alt</kbd></span></p>
                 
                   
                 
@@ -1595,7 +1647,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
         
-          <a href="../../electrolizer/readme/" title="Сбор информации" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../../../about/" title="About" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-footer-nav__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
             </div>
@@ -1604,19 +1656,19 @@
                 <span class="md-footer-nav__direction">
                   Назад
                 </span>
-                Сбор информации
+                About
               </div>
             </div>
           </a>
         
         
-          <a href="../../mikrotik/Lte/" title="Привязка R11e-LTE к сектору базовой станции" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../../electrolizer/readme/" title="Сбор информации" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-footer-nav__title">
               <div class="md-ellipsis">
                 <span class="md-footer-nav__direction">
                   Вперед
                 </span>
-                Привязка R11e-LTE к сектору базовой станции
+                Сбор информации
               </div>
             </div>
             <div class="md-footer-nav__button md-icon">
