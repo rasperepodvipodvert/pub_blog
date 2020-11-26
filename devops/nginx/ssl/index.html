@@ -11,7 +11,7 @@
         <meta name="description" content="Собираю стеки (docker, swarm, docker-compose). Пишу автоматизации">
       
       
-        <link rel="canonical" href="https://blog.filatovz.ru/develop/bitrix/bitrix_sendmail/">
+        <link rel="canonical" href="https://blog.filatovz.ru/devops/nginx/ssl/">
       
       
         <meta name="author" content="ifilatov">
@@ -21,7 +21,7 @@
     
     
       
-        <title>Проверка отправки почты из bitrix</title>
+        <title>Настройка SSL nginx</title>
       
     
     
@@ -85,6 +85,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#_1" class="md-skip">
+          Перейти к содержанию
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -108,7 +113,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              Проверка отправки почты из bitrix
+              Настройка SSL nginx
             
           </span>
         </div>
@@ -199,7 +204,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../../bitrix_to_idea_tasks/" class="md-tabs__link md-tabs__link--active">
+        <a href="../../../develop/bitrix_to_idea_tasks/" class="md-tabs__link">
           Develop
         </a>
       
@@ -216,7 +221,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../../../devops/Proxmox/%D1%80%D0%B5%D0%BF%D0%BE%D0%B7%D0%B8%D1%82%D0%BE%D1%80%D0%B8%D0%B9/" class="md-tabs__link">
+        <a href="../../Proxmox/%D1%80%D0%B5%D0%BF%D0%BE%D0%B7%D0%B8%D1%82%D0%BE%D1%80%D0%B8%D0%B9/" class="md-tabs__link">
           Devops
         </a>
       
@@ -593,12 +598,10 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" checked>
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
     
     <label class="md-nav__link" for="nav-4">
       Develop
@@ -622,7 +625,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../bitrix_to_idea_tasks/" title="Настраиваем задачи из bitrix24 в jetbrains idea" class="md-nav__link">
+    <a href="../../../develop/bitrix_to_idea_tasks/" title="Настраиваем задачи из bitrix24 в jetbrains idea" class="md-nav__link">
       Настраиваем задачи из bitrix24 в jetbrains idea
     </a>
   </li>
@@ -632,12 +635,10 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4-2" type="checkbox" id="nav-4-2" checked>
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4-2" type="checkbox" id="nav-4-2">
     
     <label class="md-nav__link" for="nav-4-2">
       Bitrix
@@ -661,7 +662,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../bitrix_recepts/" title="Рецепты для 1С Bitrix" class="md-nav__link">
+    <a href="../../../develop/bitrix/bitrix_recepts/" title="Рецепты для 1С Bitrix" class="md-nav__link">
       Рецепты для 1С Bitrix
     </a>
   </li>
@@ -671,18 +672,11 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-    
-    <a href="./" title="Проверка отправки почты из bitrix" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../../../develop/bitrix/bitrix_sendmail/" title="Проверка отправки почты из bitrix" class="md-nav__link">
       Проверка отправки почты из bitrix
     </a>
-    
   </li>
 
         
@@ -692,7 +686,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../service_temporarily_unavailable/" title="Service Temporarily Unavailable" class="md-nav__link">
+    <a href="../../../develop/bitrix/service_temporarily_unavailable/" title="Service Temporarily Unavailable" class="md-nav__link">
       Service Temporarily Unavailable
     </a>
   </li>
@@ -734,7 +728,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../python/python2_on_ubuntu2020/" title="Как установить python2 и pip2 на Ubuntu 20.04" class="md-nav__link">
+    <a href="../../../develop/python/python2_on_ubuntu2020/" title="Как установить python2 и pip2 на Ubuntu 20.04" class="md-nav__link">
       Как установить python2 и pip2 на Ubuntu 20.04
     </a>
   </li>
@@ -754,10 +748,12 @@
       
       
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5" checked>
     
     <label class="md-nav__link" for="nav-5">
       Devops
@@ -806,7 +802,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../devops/Proxmox/%D1%80%D0%B5%D0%BF%D0%BE%D0%B7%D0%B8%D1%82%D0%BE%D1%80%D0%B8%D0%B9/" title="Репозиторий" class="md-nav__link">
+    <a href="../../Proxmox/%D1%80%D0%B5%D0%BF%D0%BE%D0%B7%D0%B8%D1%82%D0%BE%D1%80%D0%B8%D0%B9/" title="Репозиторий" class="md-nav__link">
       Репозиторий
     </a>
   </li>
@@ -848,7 +844,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../devops/ansible/mysql/" title="mysql_user" class="md-nav__link">
+    <a href="../../ansible/mysql/" title="mysql_user" class="md-nav__link">
       mysql_user
     </a>
   </li>
@@ -890,7 +886,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../devops/docker/nginx_docker_fail2ban/" title="fail2ban для nginx в докере" class="md-nav__link">
+    <a href="../../docker/nginx_docker_fail2ban/" title="fail2ban для nginx в докере" class="md-nav__link">
       fail2ban для nginx в докере
     </a>
   </li>
@@ -932,7 +928,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../devops/fail2ban/install_configure/" title="Установка и конфигурирование fail2ban" class="md-nav__link">
+    <a href="../../fail2ban/install_configure/" title="Установка и конфигурирование fail2ban" class="md-nav__link">
       Установка и конфигурирование fail2ban
     </a>
   </li>
@@ -974,7 +970,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../devops/heroku/deploy_python_project/" title="Deploy python code to heroku" class="md-nav__link">
+    <a href="../../heroku/deploy_python_project/" title="Deploy python code to heroku" class="md-nav__link">
       Deploy python code to heroku
     </a>
   </li>
@@ -1016,7 +1012,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../devops/hosting/swap_file/" title="Включаем SWAP в файл" class="md-nav__link">
+    <a href="../../hosting/swap_file/" title="Включаем SWAP в файл" class="md-nav__link">
       Включаем SWAP в файл
     </a>
   </li>
@@ -1058,7 +1054,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../devops/linux/lemp/" title="Настройка LEMP - краткая инструкция" class="md-nav__link">
+    <a href="../../linux/lemp/" title="Настройка LEMP - краткая инструкция" class="md-nav__link">
       Настройка LEMP - краткая инструкция
     </a>
   </li>
@@ -1070,7 +1066,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../devops/linux/sysadmin_linux_commands/" title="Команды для linux сисадмина" class="md-nav__link">
+    <a href="../../linux/sysadmin_linux_commands/" title="Команды для linux сисадмина" class="md-nav__link">
       Команды для linux сисадмина
     </a>
   </li>
@@ -1112,7 +1108,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../devops/mysql/mysql_commands/" title="Полезные команды MYSQL" class="md-nav__link">
+    <a href="../../mysql/mysql_commands/" title="Полезные команды MYSQL" class="md-nav__link">
       Полезные команды MYSQL
     </a>
   </li>
@@ -1124,7 +1120,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../devops/mysql/pass_insecure/" title="[Warning] Using a password on the command line interface can be insecure." class="md-nav__link">
+    <a href="../../mysql/pass_insecure/" title="[Warning] Using a password on the command line interface can be insecure." class="md-nav__link">
       [Warning] Using a password on the command line interface can be insecure.
     </a>
   </li>
@@ -1139,10 +1135,12 @@
           
           
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5-9" type="checkbox" id="nav-5-9">
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5-9" type="checkbox" id="nav-5-9" checked>
     
     <label class="md-nav__link" for="nav-5-9">
       Nginx
@@ -1164,11 +1162,49 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="../../../devops/nginx/ssl/" title="Настройка SSL nginx" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Настройка SSL nginx
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"/></svg>
+        </span>
+      </label>
+    
+    <a href="./" title="Настройка SSL nginx" class="md-nav__link md-nav__link--active">
       Настройка SSL nginx
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Содержание">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      Содержание
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    Ссылки
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -1208,7 +1244,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../devops/windows/hdd_space/" title="Просмотр свободного места" class="md-nav__link">
+    <a href="../../windows/hdd_space/" title="Просмотр свободного места" class="md-nav__link">
       Просмотр свободного места
     </a>
   </li>
@@ -1250,7 +1286,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../devops/zabbix/agent2/" title="Надежное хранилище данных на стороне Agent2" class="md-nav__link">
+    <a href="../../zabbix/agent2/" title="Надежное хранилище данных на стороне Agent2" class="md-nav__link">
       Надежное хранилище данных на стороне Agent2
     </a>
   </li>
@@ -1262,7 +1298,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../devops/zabbix/nginx/" title="Мониторим NGINX" class="md-nav__link">
+    <a href="../../zabbix/nginx/" title="Мониторим NGINX" class="md-nav__link">
       Мониторим NGINX
     </a>
   </li>
@@ -1579,6 +1615,36 @@
               </div>
             
             
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Содержание">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      Содержание
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    Ссылки
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content">
             <article class="md-content__inner md-typeset">
@@ -1588,17 +1654,12 @@
                   
                 
                 
-                  <h1>Проверка отправки почты из bitrix</h1>
+                  <h1>Настройка SSL nginx</h1>
                 
-                <div class="highlight"><pre><span></span><code><span class="cp">&lt;?php</span>
-<span class="k">if</span> <span class="p">(</span><span class="nb">mail</span><span class="p">(</span><span class="s2">&quot;my_mail@mail.ru&quot;</span><span class="p">,</span> <span class="s2">&quot;заголовок&quot;</span><span class="p">,</span> <span class="s2">&quot;текст&quot;</span><span class="p">))</span> <span class="p">{</span>
-    <span class="k">echo</span> <span class="s1">&#39;Отправлено&#39;</span><span class="p">;</span>
-<span class="p">}</span>
-<span class="k">else</span> <span class="p">{</span>
-    <span class="k">echo</span> <span class="s1">&#39;Не отправлено&#39;</span><span class="p">;</span>
-<span class="p">}</span>
-<span class="cp">?&gt;</span><span class="x"></span>
-</code></pre></div>
+                <h2 id="_1">Ссылки<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="https://www.digitalocean.com/community/tutorials/how-to-secure-nginx-with-let-s-encrypt-on-ubuntu-20-04-ru">Защита Nginx с помощью Let's Encrypt в Ubuntu 20.04</a></li>
+</ul>
                 
                   
                 
@@ -1619,7 +1680,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
         
-          <a href="../bitrix_recepts/" title="Рецепты для 1С Bitrix" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../../mysql/pass_insecure/" title="[Warning] Using a password on the command line interface can be insecure." class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-footer-nav__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
             </div>
@@ -1628,19 +1689,19 @@
                 <span class="md-footer-nav__direction">
                   Назад
                 </span>
-                Рецепты для 1С Bitrix
+                [Warning] Using a password on the command line interface can be insecure.
               </div>
             </div>
           </a>
         
         
-          <a href="../service_temporarily_unavailable/" title="Service Temporarily Unavailable" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../../windows/hdd_space/" title="Просмотр свободного места" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-footer-nav__title">
               <div class="md-ellipsis">
                 <span class="md-footer-nav__direction">
                   Вперед
                 </span>
-                Service Temporarily Unavailable
+                Просмотр свободного места
               </div>
             </div>
             <div class="md-footer-nav__button md-icon">
