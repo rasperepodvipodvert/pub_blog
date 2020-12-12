@@ -1675,9 +1675,12 @@
 <li><a href="https://asp24.com.ua/blog/polevye-ispytaniya-mikrotik-sxt-lte-kit/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=polevye-ispytaniya-mikrotik-sxt-lte-kit">Полезные испытания Mikrotik LTE KIT</a></li>
 </ul>
 <h2 id="_2">Настройки<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
-<p>??? attention 'При настройке статического IP через LTE нужно учесть'
-    - при настройке режиме Passthroungh нужно вырубать DHCP-Server на интерфейсе, который указан в настройках этого режима
-    - необходимо указывать статический IP на нижнем роутере, куда вы пробрасываете LTE</p>
+<p>??? attention 'При настройке статического IP через LTE нужно учесть'</p>
+<div class="codehilite"><pre><span></span><code>- при настройке режиме Passthroungh нужно вырубать DHCP-Server на интерфейсе, который указан в настройках этого режима
+- необходимо указывать статический IP на нижнем роутере, куда вы пробрасываете LTE
+</code></pre></div>
+
+
 <p>'/interface lte at-chat lte1 input="AT*Cell=2,3,,1550,459"'</p>
 <div class="highlight"><pre><span></span><code>AT*Cell=&lt;mode&gt;,&lt;NetworkMode&gt;,&lt;band&gt;,&lt;EARFCN&gt;,&lt;PCI&gt;
 
