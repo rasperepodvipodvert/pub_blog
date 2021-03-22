@@ -11,7 +11,7 @@
         <meta name="description" content="Собираю стеки (docker, swarm, docker-compose). Пишу автоматизации">
       
       
-        <link rel="canonical" href="https://blog.filatovz.ru/develop/bitrix/service_temporarily_unavailable/">
+        <link rel="canonical" href="https://blog.filatovz.ru/Hardware/mikrotik/snmp/">
       
       
         <meta name="author" content="ifilatov">
@@ -21,7 +21,7 @@
     
     
       
-        <title>Service Temporarily Unavailable</title>
+        <title>Настройка SNMP мониторинга для zabbix - СИСADМИН.blog</title>
       
     
     
@@ -86,7 +86,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#_1" class="md-skip">
+        <a href="#snmp-zabbix" class="md-skip">
           Перейти к содержанию
         </a>
       
@@ -113,7 +113,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              Service Temporarily Unavailable
+              Настройка SNMP мониторинга для zabbix
             
           </span>
         </div>
@@ -189,7 +189,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../../../Hardware/Raspberry_PI/rpi3_android_tv/" class="md-tabs__link">
+        <a href="../../Raspberry_PI/rpi3_android_tv/" class="md-tabs__link">
           Hardware
         </a>
       
@@ -204,7 +204,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../../bitrix_to_idea_tasks/" class="md-tabs__link md-tabs__link--active">
+        <a href="../../../develop/bitrix_to_idea_tasks/" class="md-tabs__link">
           Develop
         </a>
       
@@ -334,10 +334,12 @@
       
       
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
     
     <label class="md-nav__link" for="nav-3">
       Hardware
@@ -386,7 +388,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../Hardware/Raspberry_PI/rpi3_android_tv/" title="Установка Android TV на Raspberry PI3 b+" class="md-nav__link">
+    <a href="../../Raspberry_PI/rpi3_android_tv/" title="Установка Android TV на Raspberry PI3 b+" class="md-nav__link">
       Установка Android TV на Raspberry PI3 b+
     </a>
   </li>
@@ -428,7 +430,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../Hardware/electrolizer/readme/" title="Сбор информации" class="md-nav__link">
+    <a href="../../electrolizer/readme/" title="Сбор информации" class="md-nav__link">
       Сбор информации
     </a>
   </li>
@@ -470,7 +472,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../Hardware/macbook/install_windows/" title="Установка Windows на MacBook" class="md-nav__link">
+    <a href="../../macbook/install_windows/" title="Установка Windows на MacBook" class="md-nav__link">
       Установка Windows на MacBook
     </a>
   </li>
@@ -485,10 +487,12 @@
           
           
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3-4" type="checkbox" id="nav-3-4">
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3-4" type="checkbox" id="nav-3-4" checked>
     
     <label class="md-nav__link" for="nav-3-4">
       Mikrotik
@@ -512,7 +516,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../Hardware/mikrotik/Lte/" title="Привязка R11e-LTE к сектору базовой станции" class="md-nav__link">
+    <a href="../Lte/" title="Привязка R11e-LTE к сектору базовой станции" class="md-nav__link">
       Привязка R11e-LTE к сектору базовой станции
     </a>
   </li>
@@ -524,7 +528,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../Hardware/mikrotik/adguard_dns/" title="Настраиваем свой микротик на блокировку рекламы" class="md-nav__link">
+    <a href="../adguard_dns/" title="Настраиваем свой микротик на блокировку рекламы" class="md-nav__link">
       Настраиваем свой микротик на блокировку рекламы
     </a>
   </li>
@@ -536,7 +540,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../Hardware/mikrotik/many_isp/" title="Настройка на нескольких провайдеров" class="md-nav__link">
+    <a href="../many_isp/" title="Настройка на нескольких провайдеров" class="md-nav__link">
       Настройка на нескольких провайдеров
     </a>
   </li>
@@ -546,11 +550,60 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="../../../Hardware/mikrotik/snmp/" title="Настройка SNMP мониторинга для zabbix" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Настройка SNMP мониторинга для zabbix
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"/></svg>
+        </span>
+      </label>
+    
+    <a href="./" title="Настройка SNMP мониторинга для zabbix" class="md-nav__link md-nav__link--active">
       Настройка SNMP мониторинга для zabbix
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Содержание">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      Содержание
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    Действия на микротике
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#zabbix" class="md-nav__link">
+    Действия на zabbix
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -590,7 +643,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../Hardware/usb_modem/e3372/" title="Смена IMEI e3372" class="md-nav__link">
+    <a href="../../usb_modem/e3372/" title="Смена IMEI e3372" class="md-nav__link">
       Смена IMEI e3372
     </a>
   </li>
@@ -610,12 +663,10 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" checked>
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
     
     <label class="md-nav__link" for="nav-4">
       Develop
@@ -639,7 +690,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../bitrix_to_idea_tasks/" title="Настраиваем задачи из bitrix24 в jetbrains idea" class="md-nav__link">
+    <a href="../../../develop/bitrix_to_idea_tasks/" title="Настраиваем задачи из bitrix24 в jetbrains idea" class="md-nav__link">
       Настраиваем задачи из bitrix24 в jetbrains idea
     </a>
   </li>
@@ -649,12 +700,10 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4-2" type="checkbox" id="nav-4-2" checked>
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4-2" type="checkbox" id="nav-4-2">
     
     <label class="md-nav__link" for="nav-4-2">
       Bitrix
@@ -678,7 +727,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../bitrix_recepts/" title="Рецепты для 1С Bitrix" class="md-nav__link">
+    <a href="../../../develop/bitrix/bitrix_recepts/" title="Рецепты для 1С Bitrix" class="md-nav__link">
       Рецепты для 1С Bitrix
     </a>
   </li>
@@ -690,7 +739,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../bitrix_sendmail/" title="Проверка отправки почты из bitrix" class="md-nav__link">
+    <a href="../../../develop/bitrix/bitrix_sendmail/" title="Проверка отправки почты из bitrix" class="md-nav__link">
       Проверка отправки почты из bitrix
     </a>
   </li>
@@ -700,49 +749,11 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        Service Temporarily Unavailable
-        <span class="md-nav__icon md-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"/></svg>
-        </span>
-      </label>
-    
-    <a href="./" title="Service Temporarily Unavailable" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../../../develop/bitrix/service_temporarily_unavailable/" title="Service Temporarily Unavailable" class="md-nav__link">
       Service Temporarily Unavailable
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary" aria-label="Содержание">
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-      </span>
-      Содержание
-    </label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
-    Решение
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
         
@@ -782,7 +793,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../python/python2_on_ubuntu2020/" title="Как установить python2 и pip2 на Ubuntu 20.04" class="md-nav__link">
+    <a href="../../../develop/python/python2_on_ubuntu2020/" title="Как установить python2 и pip2 на Ubuntu 20.04" class="md-nav__link">
       Как установить python2 и pip2 на Ubuntu 20.04
     </a>
   </li>
@@ -794,7 +805,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../python/python3_on_debian10/" title="Как установить python3 на Debian 10" class="md-nav__link">
+    <a href="../../../develop/python/python3_on_debian10/" title="Как установить python3 на Debian 10" class="md-nav__link">
       Как установить python3 на Debian 10
     </a>
   </li>
@@ -1784,6 +1795,8 @@
 <nav class="md-nav md-nav--secondary" aria-label="Содержание">
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon">
@@ -1795,7 +1808,14 @@
       
         <li class="md-nav__item">
   <a href="#_1" class="md-nav__link">
-    Решение
+    Действия на микротике
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#zabbix" class="md-nav__link">
+    Действия на zabbix
   </a>
   
 </li>
@@ -1816,15 +1836,17 @@
                   
                 
                 
-                  <h1>Service Temporarily Unavailable</h1>
-                
-                <h2 id="_1">Решение<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code>Для устранения заходим по следующему пути: &quot;Рабочий стол-&gt;Настройки-&gt;Проактивная защита-&gt;Контроль активности&quot;. 
-Здесь можно уменьшить поле &quot;Блокировать на время&quot;, увеличить &quot;если в течение&quot; и &quot;сделано более&quot;. 
-Также можете изменить шаблон ошибки, что бы в следующий раз знать причину. 
+                <h1 id="snmp-zabbix">Настройка SNMP мониторинга для zabbix<a class="headerlink" href="#snmp-zabbix" title="Permanent link">&para;</a></h1>
+<h2 id="_1">Действия на микротике<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code>ip firewall filter add chain=input protocol=udp in-interface-list=WAN action=accept place-before=1
+snmp community add name=ts_123456 addresses=0.0.0.0/0
+snmp set enabled=yes location=TS trap-community=ts_123456 trap-version=2
 </code></pre></div>
-                
-                  
+
+<h2 id="zabbix">Действия на zabbix<a class="headerlink" href="#zabbix" title="Permanent link">&para;</a></h2>
+<ol>
+<li>Установить <a href="https://www.zabbix.com/ru/integrations/mikrotik">шаблон</a></li>
+</ol>
                 
               
               
@@ -1843,7 +1865,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
         
-          <a href="../bitrix_sendmail/" title="Проверка отправки почты из bitrix" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../many_isp/" title="Настройка на нескольких провайдеров" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-footer-nav__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
             </div>
@@ -1852,19 +1874,19 @@
                 <span class="md-footer-nav__direction">
                   Назад
                 </span>
-                Проверка отправки почты из bitrix
+                Настройка на нескольких провайдеров
               </div>
             </div>
           </a>
         
         
-          <a href="../../python/python2_on_ubuntu2020/" title="Как установить python2 и pip2 на Ubuntu 20.04" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../../usb_modem/e3372/" title="Смена IMEI e3372" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-footer-nav__title">
               <div class="md-ellipsis">
                 <span class="md-footer-nav__direction">
                   Вперед
                 </span>
-                Как установить python2 и pip2 на Ubuntu 20.04
+                Смена IMEI e3372
               </div>
             </div>
             <div class="md-footer-nav__button md-icon">
