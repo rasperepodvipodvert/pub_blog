@@ -21,7 +21,7 @@
     
     
       
-        <title>Настройка SNMP мониторинга для zabbix - СИСADМИН.blog</title>
+        <title>Настройка мониторинга mikrotik по SNMP на zabbix - СИСADМИН.blog</title>
       
     
     
@@ -86,7 +86,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#snmp-zabbix" class="md-skip">
+        <a href="#mikrotik-snmp-zabbix" class="md-skip">
           Перейти к содержанию
         </a>
       
@@ -113,7 +113,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              Настройка SNMP мониторинга для zabbix
+              Настройка мониторинга mikrotik по SNMP на zabbix
             
           </span>
         </div>
@@ -561,14 +561,14 @@
     
     
       <label class="md-nav__link md-nav__link--active" for="__toc">
-        Настройка SNMP мониторинга для zabbix
+        Настройка мониторинга mikrotik по SNMP на zabbix
         <span class="md-nav__icon md-icon">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"/></svg>
         </span>
       </label>
     
-    <a href="./" title="Настройка SNMP мониторинга для zabbix" class="md-nav__link md-nav__link--active">
-      Настройка SNMP мониторинга для zabbix
+    <a href="./" title="Настройка мониторинга mikrotik по SNMP на zabbix" class="md-nav__link md-nav__link--active">
+      Настройка мониторинга mikrotik по SNMP на zabbix
     </a>
     
       
@@ -1836,7 +1836,7 @@
                   
                 
                 
-                <h1 id="snmp-zabbix">Настройка SNMP мониторинга для zabbix<a class="headerlink" href="#snmp-zabbix" title="Permanent link">&para;</a></h1>
+                <h1 id="mikrotik-snmp-zabbix">Настройка мониторинга mikrotik по SNMP на zabbix<a class="headerlink" href="#mikrotik-snmp-zabbix" title="Permanent link">&para;</a></h1>
 <h2 id="_1">Действия на микротике<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code>ip firewall filter add chain=input protocol=udp in-interface-list=WAN action=accept place-before=1
 snmp community add name=ts_123456 addresses=0.0.0.0/0
